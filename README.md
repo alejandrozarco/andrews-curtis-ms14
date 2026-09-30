@@ -29,6 +29,24 @@ Presentations (relators as words; capital letters are inverses, `X` = $`x^{-1}`$
 
 (states, counted up to relator swap, inversion, cyclic rotation and the 8 signed letter permutations; `runs/*.log`).
 
+## Figures
+
+Regenerate with `python3 figures/make_figures.py` (matplotlib), from `runs/*.log` and `certs/P1_equiv_C6.json`.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="figures/search_growth_dark.svg">
+  <img alt="Number of states in the capped AC components of P1 and P2 for caps 29 to 32, log scale" src="figures/search_growth_light.svg">
+</picture>
+
+Size of the capped components (result 2), log scale.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="figures/certificate_profile_dark.svg">
+  <img alt="Total relator length after each of the 1066 moves of the P1 to C6 certificate, exact and cyclically reduced" src="figures/certificate_profile_light.svg">
+</picture>
+
+Total relator length along the certificate of result 1, as exact words and cyclically reduced.
+
 ## Search model (for result 2)
 
 `acsearch.cpp`: states are unordered pairs of cyclically reduced words modulo rotation, inversion, swap and the
