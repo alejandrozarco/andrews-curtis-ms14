@@ -17,7 +17,8 @@ Presentations (relators as words; capital letters are inverses, `X` = $`x^{-1}`$
    in the swap/inversion/cyclic-rotation orbit of C6 (peak total relator length 41 as exact words).
    `python3 verify.py certs/P1_equiv_C6.json` replays it.
 2. **Exhaustive search.** For each start P1, P2, the set of presentations reachable by AC moves without the total
-   relator length (cyclically reduced) exceeding a cap $`L`$ was enumerated completely, for $`L = 29,\dots,32`$.
+   relator length (cyclically reduced) exceeding a cap $`L`$ was enumerated completely, for $`L = 29,\dots,32`$
+   (search model and its completeness condition below).
    None of these sets contains AK(3), the other start, or the trivial presentation (the P1 sets contain C6).
    So, under this search model, any AC path from P1 or P2 to AK(3), to each other, or to the trivial presentation
    reaches total length $`\ge 33`$.
@@ -27,7 +28,12 @@ Presentations (relators as words; capital letters are inverses, `X` = $`x^{-1}`$
 | P1 | 2,267,706 | 5,349,664 | 15,165,074 | 32,699,098 |
 | P2 | 6,331,998 | 11,889,832 | 39,047,968 | 71,499,215 |
 
-(states, counted up to relator swap, inversion, cyclic rotation and the 8 signed letter permutations; `runs/*.log`).
+(states, counted up to relator swap, inversion, cyclic rotation and the 8 signed letter permutations; `runs/*.log`;
+conjugator bound $`K = 8`$ for caps 29–31 and $`K = 9`$ for cap 32, `runs/exh_P1_c32_k9.log`, `runs/exh_P2_c32_k9.log`).
+
+Correction (2026-09-30): the first version used $`K = 8`$ at cap 32, which the completeness condition below does not
+cover. The cap-32 runs were repeated with $`K = 9`$ and give the same components (same state counts, level by level);
+the $`K = 8`$ logs are kept as `runs/exh_P1_c32.log`, `runs/exh_P2_c32.log`.
 
 ## Figures
 
@@ -51,8 +57,11 @@ Total relator length along the certificate of result 1, as exact words and cycli
 
 `acsearch.cpp`: states are unordered pairs of cyclically reduced words modulo rotation, inversion, swap and the
 signed letter permutations $`\varphi`$; moves $`u \leftarrow \mathrm{CR}(\mathrm{rot}_i(u)\, c\, \mathrm{rot}_j(v^{\pm1})\, c^{-1})`$
-for all rotations and conjugators $`c`$ of length $`\le 8`$ (junction-free), which contains the projection of the
-elementary AC graph at the same cap. The $`\varphi`$-quotient is justified by explicit AC paths from AK(3) to each
+for all rotations and junction-free conjugators $`c`$ of length $`\le K`$. This graph contains the projection of the
+elementary AC graph at cap $`L`$ provided $`K \ge \lfloor (L - m)/2 \rfloor`$, where $`m`$ is the minimum total length of a state in the
+component (an exact state $`(a u a^{-1}, b v b^{-1})`$ projects to $`\{u, v\}`$, and a multiplication projects to the
+move with $`c = a^{-1}b`$, $`|c| \le |a| + |b| \le (L - |u| - |v|)/2`$). Here $`m = 14`$, so $`K = 8`$ suffices for
+$`L \le 31`$ and $`K = 9`$ is used for $`L = 32`$. The $`\varphi`$-quotient is justified by explicit AC paths from AK(3) to each
 $`\varphi(\mathrm{AK}(3))`$ (`certs/phi/`, checked by `verify.py`). Validation: the rotation-only variant reproduces the
 component sizes 680,700 (P1) and 1,880,041 (P2) at cap 28 reported in github.com/nahomar/andrews-curtis-solver;
 `validate_projection.py` checks the projection claim on random elementary walks with a negative control.
