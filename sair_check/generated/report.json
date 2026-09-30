@@ -1,0 +1,574 @@
+[
+  {
+    "cert": "certs/P1_equiv_C6.json",
+    "n_cert_moves": 1066,
+    "n_elementary_moves": 1066,
+    "n_official_ids_main": 1066,
+    "our_verify_py": "PASS AC-equivalence",
+    "our_stats": {
+      "moves": 1066,
+      "classical": 1066,
+      "peak_total": 41,
+      "peak_single": 30,
+      "terminal": [
+        [
+          -1,
+          -2,
+          1,
+          2,
+          2,
+          1,
+          -2
+        ],
+        [
+          1,
+          -2,
+          -2,
+          1,
+          1,
+          2,
+          1
+        ]
+      ]
+    },
+    "official_challenge": "ac-02089",
+    "official_initial_relators": [
+      [
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        1
+      ],
+      [
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        1
+      ]
+    ],
+    "prefix_ids": [
+      8,
+      8,
+      8,
+      1
+    ],
+    "n_prefix_ids": 4,
+    "n_official_ids_total": 1070,
+    "official_replay_final": [
+      [
+        -1,
+        -2,
+        1,
+        2,
+        2,
+        1,
+        -2
+      ],
+      [
+        1,
+        -2,
+        -2,
+        1,
+        1,
+        2,
+        1
+      ]
+    ],
+    "matches_our_final": true,
+    "endpoint_in_target_orbit": true,
+    "target_official_challenge": null,
+    "cli": {
+      "command": "python3 -m verifier --manifest $SAIR_REPO/competition/tools/verifier/data/manifest.json --submission sair_check/generated/submission_ac-02089.txt --pretty  (cwd=$SAIR_REPO, PYTHONPATH=competition/tools)",
+      "submission_file": "sair_check/generated/submission_ac-02089.txt",
+      "returncode": 1,
+      "stdout": "{\n  \"accepted\": true,\n  \"results\": [\n    {\n      \"challenge_id\": \"ac-02089\",\n      \"code\": \"E_NOT_TARGET\",\n      \"final_shape\": [\n        7,\n        7\n      ],\n      \"move_index\": null,\n      \"ok\": false\n    }\n  ]\n}\n",
+      "stderr": ""
+    }
+  },
+  {
+    "cert": "certs/carreras/cert_ms3_yinvx2yinv_equiv_ak3.json",
+    "n_cert_moves": 13,
+    "n_elementary_moves": 25,
+    "n_official_ids_main": 25,
+    "our_verify_py": "PASS AC-equivalence",
+    "our_stats": {
+      "moves": 13,
+      "classical": 22,
+      "peak_total": 23,
+      "peak_single": 14,
+      "terminal": [
+        [
+          -2,
+          -1,
+          2,
+          1,
+          2,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          2,
+          2,
+          2,
+          2,
+          -1
+        ]
+      ]
+    },
+    "official_challenge": "ac-06556",
+    "official_initial_relators": [
+      [
+        -2,
+        -1,
+        -2,
+        1,
+        1
+      ],
+      [
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        1
+      ]
+    ],
+    "prefix_ids": [
+      2,
+      5,
+      2,
+      8,
+      6,
+      8,
+      7,
+      1,
+      8,
+      8,
+      8,
+      7,
+      12
+    ],
+    "n_prefix_ids": 13,
+    "n_official_ids_total": 38,
+    "official_replay_final": [
+      [
+        -2,
+        -1,
+        2,
+        1,
+        2,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1
+      ]
+    ],
+    "matches_our_final": true,
+    "endpoint_in_target_orbit": true,
+    "target_official_challenge": "ac-00399",
+    "cli": {
+      "command": "python3 -m verifier --manifest $SAIR_REPO/competition/tools/verifier/data/manifest.json --submission sair_check/generated/submission_ac-06556.txt --pretty  (cwd=$SAIR_REPO, PYTHONPATH=competition/tools)",
+      "submission_file": "sair_check/generated/submission_ac-06556.txt",
+      "returncode": 1,
+      "stdout": "{\n  \"accepted\": true,\n  \"results\": [\n    {\n      \"challenge_id\": \"ac-06556\",\n      \"code\": \"E_NOT_TARGET\",\n      \"final_shape\": [\n        6,\n        7\n      ],\n      \"move_index\": null,\n      \"ok\": false\n    }\n  ]\n}\n",
+      "stderr": ""
+    }
+  },
+  {
+    "cert": "certs/carreras/cert_ms3_yx2y_equiv_ak3.json",
+    "n_cert_moves": 71,
+    "n_elementary_moves": 112,
+    "n_official_ids_main": 112,
+    "our_verify_py": "PASS AC-equivalence",
+    "our_stats": {
+      "moves": 71,
+      "classical": 106,
+      "peak_total": 22,
+      "peak_single": 15,
+      "terminal": [
+        [
+          -1,
+          -1,
+          2,
+          2,
+          2,
+          2,
+          -1
+        ],
+        [
+          1,
+          -2,
+          -1,
+          -2,
+          1,
+          2
+        ]
+      ]
+    },
+    "official_challenge": "ac-02842",
+    "official_initial_relators": [
+      [
+        -2,
+        -1,
+        -1,
+        -2,
+        1
+      ],
+      [
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        2,
+        1
+      ]
+    ],
+    "prefix_ids": [
+      2,
+      5,
+      2,
+      8,
+      6,
+      6,
+      8,
+      1,
+      8,
+      8,
+      8,
+      7,
+      1
+    ],
+    "n_prefix_ids": 13,
+    "n_official_ids_total": 125,
+    "official_replay_final": [
+      [
+        -1,
+        -1,
+        2,
+        2,
+        2,
+        2,
+        -1
+      ],
+      [
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        2
+      ]
+    ],
+    "matches_our_final": true,
+    "endpoint_in_target_orbit": true,
+    "target_official_challenge": "ac-00399",
+    "cli": {
+      "command": "python3 -m verifier --manifest $SAIR_REPO/competition/tools/verifier/data/manifest.json --submission sair_check/generated/submission_ac-02842.txt --pretty  (cwd=$SAIR_REPO, PYTHONPATH=competition/tools)",
+      "submission_file": "sair_check/generated/submission_ac-02842.txt",
+      "returncode": 1,
+      "stdout": "{\n  \"accepted\": true,\n  \"results\": [\n    {\n      \"challenge_id\": \"ac-02842\",\n      \"code\": \"E_NOT_TARGET\",\n      \"final_shape\": [\n        7,\n        6\n      ],\n      \"move_index\": null,\n      \"ok\": false\n    }\n  ]\n}\n",
+      "stderr": ""
+    }
+  },
+  {
+    "cert": "certs/carreras/bottleneck_ak_f3_cert.json",
+    "n_cert_moves": 66,
+    "n_elementary_moves": 131,
+    "n_official_ids_main": 131,
+    "our_verify_py": "PASS AC-equivalence",
+    "our_stats": {
+      "moves": 66,
+      "classical": 101,
+      "peak_total": 24,
+      "peak_single": 15,
+      "terminal": [
+        [
+          1,
+          1,
+          2,
+          -1,
+          2
+        ],
+        [
+          2,
+          2,
+          1,
+          -2,
+          -2,
+          -2,
+          -2,
+          -1,
+          2
+        ]
+      ]
+    },
+    "official_challenge": "ac-00399",
+    "official_initial_relators": [
+      [
+        -2,
+        -1,
+        -2,
+        1,
+        2,
+        1
+      ],
+      [
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        1
+      ]
+    ],
+    "prefix_ids": [
+      8,
+      6,
+      8,
+      10,
+      10,
+      10
+    ],
+    "n_prefix_ids": 6,
+    "n_official_ids_total": 137,
+    "official_replay_final": [
+      [
+        1,
+        1,
+        2,
+        -1,
+        2
+      ],
+      [
+        2,
+        2,
+        1,
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        2
+      ]
+    ],
+    "matches_our_final": true,
+    "endpoint_in_target_orbit": true,
+    "target_official_challenge": "ac-02842",
+    "cli": {
+      "command": "python3 -m verifier --manifest $SAIR_REPO/competition/tools/verifier/data/manifest.json --submission sair_check/generated/submission_ac-00399.txt --pretty  (cwd=$SAIR_REPO, PYTHONPATH=competition/tools)",
+      "submission_file": "sair_check/generated/submission_ac-00399.txt",
+      "returncode": 1,
+      "stdout": "{\n  \"accepted\": true,\n  \"results\": [\n    {\n      \"challenge_id\": \"ac-00399\",\n      \"code\": \"E_NOT_TARGET\",\n      \"final_shape\": [\n        5,\n        9\n      ],\n      \"move_index\": null,\n      \"ok\": false\n    }\n  ]\n}\n",
+      "stderr": ""
+    }
+  },
+  {
+    "cert": "certs/carreras/cert_idx0_equiv_mirror.json",
+    "n_cert_moves": 85,
+    "n_elementary_moves": 206,
+    "n_official_ids_main": 206,
+    "our_verify_py": "PASS AC-equivalence",
+    "our_stats": {
+      "moves": 85,
+      "classical": 155,
+      "peak_total": 33,
+      "peak_single": 21,
+      "terminal": [
+        [
+          -2,
+          -2,
+          -2,
+          -1,
+          2,
+          2,
+          1
+        ],
+        [
+          -1,
+          -1,
+          -2,
+          1,
+          1,
+          -2,
+          -1
+        ]
+      ]
+    },
+    "official_challenge": "ac-03467",
+    "official_initial_relators": [
+      [
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        1
+      ],
+      [
+        -2,
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        1
+      ]
+    ],
+    "prefix_ids": [
+      8,
+      8,
+      8,
+      1,
+      10,
+      10
+    ],
+    "n_prefix_ids": 6,
+    "n_official_ids_total": 212,
+    "official_replay_final": [
+      [
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        1
+      ],
+      [
+        -1,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -1
+      ]
+    ],
+    "matches_our_final": true,
+    "endpoint_in_target_orbit": true,
+    "target_official_challenge": "ac-08126",
+    "cli": {
+      "command": "python3 -m verifier --manifest $SAIR_REPO/competition/tools/verifier/data/manifest.json --submission sair_check/generated/submission_ac-03467.txt --pretty  (cwd=$SAIR_REPO, PYTHONPATH=competition/tools)",
+      "submission_file": "sair_check/generated/submission_ac-03467.txt",
+      "returncode": 1,
+      "stdout": "{\n  \"accepted\": true,\n  \"results\": [\n    {\n      \"challenge_id\": \"ac-03467\",\n      \"code\": \"E_NOT_TARGET\",\n      \"final_shape\": [\n        7,\n        7\n      ],\n      \"move_index\": null,\n      \"ok\": false\n    }\n  ]\n}\n",
+      "stderr": ""
+    }
+  },
+  {
+    "cert": "certs/carreras/cert_sym_equiv_orphan1.json",
+    "n_cert_moves": 36,
+    "n_elementary_moves": 85,
+    "n_official_ids_main": 85,
+    "our_verify_py": "PASS AC-equivalence",
+    "our_stats": {
+      "moves": 36,
+      "classical": 58,
+      "peak_total": 27,
+      "peak_single": 17,
+      "terminal": [
+        [
+          -2,
+          -2,
+          1,
+          2,
+          2,
+          2,
+          -1
+        ],
+        [
+          -1,
+          -2,
+          1,
+          1,
+          1,
+          2,
+          -1
+        ]
+      ]
+    },
+    "official_challenge": "ac-02089",
+    "official_initial_relators": [
+      [
+        -2,
+        -2,
+        -2,
+        -1,
+        2,
+        2,
+        1
+      ],
+      [
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        1,
+        1
+      ]
+    ],
+    "prefix_ids": [
+      8,
+      8,
+      8,
+      1,
+      10,
+      10,
+      10
+    ],
+    "n_prefix_ids": 7,
+    "n_official_ids_total": 92,
+    "official_replay_final": [
+      [
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        2,
+        -1
+      ],
+      [
+        -1,
+        -2,
+        1,
+        1,
+        1,
+        2,
+        -1
+      ]
+    ],
+    "matches_our_final": true,
+    "endpoint_in_target_orbit": true,
+    "target_official_challenge": "ac-00413",
+    "cli": {
+      "command": "python3 -m verifier --manifest $SAIR_REPO/competition/tools/verifier/data/manifest.json --submission sair_check/generated/submission_ac-02089.txt --pretty  (cwd=$SAIR_REPO, PYTHONPATH=competition/tools)",
+      "submission_file": "sair_check/generated/submission_ac-02089.txt",
+      "returncode": 1,
+      "stdout": "{\n  \"accepted\": true,\n  \"results\": [\n    {\n      \"challenge_id\": \"ac-02089\",\n      \"code\": \"E_NOT_TARGET\",\n      \"final_shape\": [\n        7,\n        7\n      ],\n      \"move_index\": null,\n      \"ok\": false\n    }\n  ]\n}\n",
+      "stderr": ""
+    }
+  }
+]
