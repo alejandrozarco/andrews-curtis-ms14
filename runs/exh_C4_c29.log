@@ -1,0 +1,32 @@
+start xxxxyXy|xyyyxYY cap=29 conj=8 nosym=0 threads=3 maxstates=100000000
+target 0: xyxYXY|xxxxYYY
+target 1: xxxyXXY|xyyXYYY
+target 2: xxxyXXy|xyyXYYY
+target 3: x|y
+target 4: xxyXy|xyyyyyxYY
+target 5: xxxxyXy|xyyyxYY
+target 6: xxyxxYY|xyXYYXy
+start equals target 5
+level 1: +3980 new (total 3981) 0s  bylen: 17:4 19:12 21:44 23:80 25:312 27:864 29:2664
+level 2: +11160 new (total 15141) 0s  bylen: 16:2 18:3 19:3 20:28 21:4 22:111 23:20 24:506 25:81 26:1958 27:270 28:7328 29:846
+level 3: +40621 new (total 55762) 0s  bylen: 17:2 18:1 19:14 20:1 21:55 22:6 23:356 24:14 25:1566 26:87 27:7159 28:251 29:31109
+level 4: +25730 new (total 81492) 2s  bylen: 16:2 18:4 19:2 20:17 21:9 22:131 23:32 24:670 25:129 26:3687 27:488 28:18777 29:1782
+level 5: +61284 new (total 142776) 3s  bylen: 17:2 19:10 20:1 21:57 22:9 23:324 24:27 25:1795 26:128 27:9326 28:519 29:49086
+level 6: +27101 new (total 169877) 6s  bylen: 18:1 19:1 20:8 21:3 22:81 23:12 24:593 25:72 26:3576 27:316 28:21071 29:1367
+level 7: +50351 new (total 220228) 8s  bylen: 20:1 21:10 22:3 23:87 24:14 25:859 26:47 27:6476 28:217 29:42637
+level 8: +12769 new (total 232997) 10s  bylen: 19:1 20:3 21:3 22:16 23:8 24:147 25:34 26:1302 27:143 28:10440 29:672
+level 9: +20938 new (total 253935) 10s  bylen: 20:1 21:1 22:1 23:24 24:19 25:239 26:36 27:2170 28:173 29:18274
+level 10: +4852 new (total 258787) 11s  bylen: 21:1 22:2 23:6 24:35 25:29 26:380 27:129 28:3712 29:558
+level 11: +6631 new (total 265418) 11s  bylen: 22:1 24:9 25:36 26:22 27:582 28:74 29:5907
+level 12: +1372 new (total 266790) 11s  bylen: 23:2 24:6 25:11 26:79 27:49 28:1033 29:192
+level 13: +1785 new (total 268575) 11s  bylen: 24:3 26:7 27:119 28:36 29:1620
+level 14: +329 new (total 268904) 11s  bylen: 25:2 26:12 27:12 28:251 29:52
+level 15: +381 new (total 269285) 11s  bylen: 26:4 27:3 28:6 29:368
+level 16: +75 new (total 269360) 11s  bylen: 26:4 27:2 28:60 29:9
+level 17: +119 new (total 269479) 11s  bylen: 28:1 29:118
+level 18: +11 new (total 269490) 11s  bylen: 28:10 29:1
+level 19: +6 new (total 269496) 11s  bylen: 29:6
+level 20: +4 new (total 269500) 11s  bylen: 28:4
+level 21: +0 new (total 269500) 11s  bylen:
+RESULT start=xxxxyXy|xyyyxYY cap=29 conj=8 nosym=0 states=269500 levels=21 complete=1 hit=0 overflow=0 time=11s
+states by total length: 14:1 16:4 17:8 18:9 19:43 20:60 21:187 22:361 23:951 24:2043 25:5165 26:11329 27:28108 28:63963 29:157268

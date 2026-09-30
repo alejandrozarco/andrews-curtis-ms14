@@ -9,6 +9,8 @@ Presentations (relators as words; capital letters are inverses, `X` = $`x^{-1}`$
 | P1 = MS(2, $`x^{-2}y^{-1}x^{2}y`$) | `XyyxYYY`, `XXXYxxy` | ac-02089 |
 | P2 = MS(2, $`x^{-2}y^{-1}x^{2}y^{-1}`$) | `XyyxYYY`, `XXXYxxY` | ac-08126 |
 | C6 | `xxyxxYY`, `xyXYYXy` (i.e. $`x^2yx^2y^{-2}`$, $`xyx^{-1}y^{-2}x^{-1}y`$) | — |
+| C3 | `xxyXy`, `xyyyyyxYY` (i.e. $`x^2yx^{-1}y`$, $`xy^5xy^{-2}`$) | — |
+| C4 | `xxxxyXy`, `xyyyxYY` (i.e. $`x^4yx^{-1}y`$, $`xy^3xy^{-2}`$) | — |
 | AK(3) | `xxxYYYY`, `xyxYXY` | ac-00399 |
 
 ## Results
@@ -35,9 +37,20 @@ Correction (2026-09-30): the first version used $`K = 8`$ at cap 32, which the c
 cover. The cap-32 runs were repeated with $`K = 9`$ and give the same components (same state counts, level by level);
 the $`K = 8`$ logs are kept as `runs/exh_P1_c32.log`, `runs/exh_P2_c32.log`.
 
+3. **Same enumeration from C3 and C4** (with C6, residual length-14 classes of github.com/nahomar/andrews-curtis-solver).
+   None of these sets contains AK(3), P1, P2, C6, the other start, or the trivial presentation.
+
+| start | cap 29 | cap 30 | cap 31 | cap 32 |
+|---|---|---|---|---|
+| C3 | 25,978,085 | 58,196,612 | — | — |
+| C4 | 269,500 | 627,909 | 1,544,676 | 3,657,734 |
+
+($`K = 8`$, and $`K = 9`$ at cap 32; `runs/exh_C3_*.log`, `runs/exh_C4_*.log`.)
+
 ## Figures
 
-Regenerate with `python3 figures/make_figures.py` (matplotlib), from `runs/*.log` and `certs/P1_equiv_C6.json`.
+Regenerate with `python3 figures/make_figures.py` (matplotlib), from `runs/*.log` and `certs/P1_equiv_C6.json`
+(only complete runs whose conjugator bound meets the completeness condition are used).
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="figures/search_growth_dark.svg">
@@ -52,6 +65,14 @@ Size of the capped components (result 2), log scale.
 </picture>
 
 Total relator length along the certificate of result 1, as exact words and cyclically reduced.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="figures/hard_cases_dark.svg">
+  <img alt="Map of the length-14 cases P1, C6, P2, C3, C4, AK(3) and the trivial presentation: P1 and C6 joined by the certificate, and the largest cap at which each start's component was enumerated completely (32 for P1, P2, C4; 30 for C3)" src="figures/hard_cases_light.svg">
+</picture>
+
+Certified link (result 1) and completely enumerated capped components (results 2, 3). An AC path from a case to any
+case outside its box, or to the trivial presentation, reaches a total length above the cap of the box.
 
 ## Search model (for result 2)
 
