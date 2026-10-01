@@ -1,6 +1,15 @@
 # Andrews–Curtis: two length-14 Miller–Schupp presentations
 
-Status: **computational results, not peer reviewed.** First published 2026-09-30.
+Status: **computational certificates and search records, not peer reviewed.** First published 2026-09-30.
+**Produced by AI models** under the direction of the repository owner; see [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md).
+
+> [!IMPORTANT]
+> This repository contains AI-produced, computer-checked results that no human has digested. The AC-equivalence
+> certificate (result 1) is a **warrant**: a move sequence replayed by checkers, not a human-readable argument. The capped
+> exhaustive searches (results 2, 3) are evidence from an unverified program, not a proof. We do not regard the
+> AC-equivalence of these presentations to AK(3) or to the trivial presentation as settled either way by this work.
+> We welcome a human-readable treatment, and credit belongs to whoever writes one. Questions, checks and corrections:
+> [GitHub issues](https://github.com/alejandrozarco/andrews-curtis-ms14/issues).
 
 Presentations (relators as words; capital letters are inverses, `X` = $`x^{-1}`$):
 
