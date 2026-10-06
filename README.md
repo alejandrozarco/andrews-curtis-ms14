@@ -9,8 +9,12 @@ Status: **computational certificates and search records, not peer reviewed.** Fi
 > digested. The capped exhaustive searches (results 2, 3) are evidence from a program that is tested, including an
 > independent cross-check (`crosscheck/`), but not verified; they are not a proof. We do not regard the questions about
 > these presentations as settled by this work. Independent verification and human-readable expositions are welcome,
-> and credit for a human-readable proof belongs to whoever writes one. Questions, checks and corrections:
-> [GitHub issues](https://github.com/alejandrozarco/andrews-curtis-ms14/issues).
+> and credit for a human-readable proof belongs to whoever writes one. To refer to the computational results, please
+> cite the archived repository ([10.5281/zenodo.23196601](https://doi.org/10.5281/zenodo.23196601)). Questions, checks
+> and corrections: [GitHub issues](https://github.com/alejandrozarco/andrews-curtis-ms14/issues).
+
+Archived on Zenodo: [10.5281/zenodo.23196601](https://doi.org/10.5281/zenodo.23196601) (all versions). Cite with
+`CITATION.cff`.
 
 Presentations (relators as words; capital letters are inverses, `X` = $`x^{-1}`$):
 
