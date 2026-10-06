@@ -1,0 +1,100 @@
+# target 3 yyyXXXX|yxyXYX cap 20 conj 0 nosym 1 peak 19 steps 7
+xyxYXY|xxxYYYY
+xyxYXY|xyxyXYxYYYY
+xyxYXY|xyxyyXYYYYY
+xyxYXY|xyxyyyXYXYYYY
+xyxYXY|xxYYYXYXyyyxy
+xyxYXY|xxxYYYXYXyyxy
+xyxYXY|xxxxYYYXYXyxy
+xyxYXY|xxxxYYY
+# end
+# target 6 YYYxxxx|YXYxyx cap 20 conj 0 nosym 1 peak 19 steps 7
+xyxYXY|xxxYYYY
+xyxYXY|xyxyXYxYYYY
+xyxYXY|xyxyyXYYYYY
+xyxYXY|xyxyyyXYXYYYY
+xyxYXY|xxYYYXYXyyyxy
+xyxYXY|xxxYYYXYXyyxy
+xyxYXY|xxxxYYYXYXyxy
+xyxYXY|xxxxYYY
+# end
+# target 4 YYYXXXX|YxYXyX cap 20 conj 0 nosym 1 peak 20 steps 17
+xyxYXY|xxxYYYY
+xxxYYYY|xxYYYxyXY
+xxyXXyXY|xxYYYxyXY
+xxyXXyXY|xxYXyyXXy
+xxyXXyXY|xxYYXyxYY
+xxyXXyXY|xxYXyxYXY
+xxyXXyXY|xxYXyXyXYxY
+xyXyXYY|xxYXyXyXYxY
+xyXyXYY|xyxYXyXyxY
+xyXyXYY|xyxYYXyXY
+xyxYYXyXY|xyxYxyXYXy
+xxyxYXYXy|xyxYxyXYXy
+xxyxYXYXy|xxyXYXyXYxy
+xxyxYXYXy|xyxYXyxyXY
+xxxyxYXXy|xyxYXyxyXY
+xxxyxYXXy|xxxxyxYXyXy
+xyXyxY|xxxxyxYXyXy
+xyXyxY|xxxxyyy
+# end
+# target 5 yyyxxxx|yXyxYx cap 20 conj 0 nosym 1 peak 20 steps 17
+xyxYXY|xxxYYYY
+xxxYYYY|xxYYYxyXY
+xxyXXyXY|xxYYYxyXY
+xxyXXyXY|xxYXyyXXy
+xxyXXyXY|xxYYXyxYY
+xxyXXyXY|xxYXyxYXY
+xxyXXyXY|xxYXyXyXYxY
+xyXyXYY|xxYXyXyXYxY
+xyXyXYY|xyxYXyXyxY
+xyXyXYY|xyxYYXyXY
+xyxYYXyXY|xyxYxyXYXy
+xxyxYXYXy|xyxYxyXYXy
+xxyxYXYXy|xxyXYXyXYxy
+xxyxYXYXy|xyxYXyxyXY
+xxxyxYXXy|xyxYXyxyXY
+xxxyxYXXy|xxxxyxYXyXy
+xyXyxY|xxxxyxYXyXy
+xyXyxY|xxxxyyy
+# end
+# target 0 XXXYYYY|XyXYxY cap 20 conj 0 nosym 1 peak 20 steps 17
+xyxYXY|xxxYYYY
+xyxYXY|xxYYYxyXY
+xyxYXY|xyyXYxYYY
+xyXyXYxYY|xyyXYxYYY
+xyXyXYxYY|xyXyxYXyXY
+xyXyXYxYY|xyXyxYYxYXy
+xyXyXYxYY|xyXyxYXYxY
+xxYXYxyXy|xyXyxYXYxY
+xxyXYXY|xxYXYxyXy
+xxyXYXY|xxxYXyXy
+xxyXYXY|xyxyxYYXyXy
+xyyxYYXy|xyxyxYYXyXy
+xyyxYYXy|xyxYYXyyyXY
+xyyxYYXy|xyyXyXYYYYY
+xyyyXYYYY|xyyXyXYYYYY
+xyXyxY|xyyXyXYYYYY
+xyXyxY|xxYxYXyyyyy
+xyXyxY|xxxyyyy
+# end
+# target 1 xxxyyyy|xYxyXy cap 20 conj 0 nosym 1 peak 20 steps 17
+xyxYXY|xxxYYYY
+xyxYXY|xxYYYxyXY
+xyxYXY|xyyXYxYYY
+xyXyXYxYY|xyyXYxYYY
+xyXyXYxYY|xyXyxYXyXY
+xyXyXYxYY|xyXyxYYxYXy
+xyXyXYxYY|xyXyxYXYxY
+xxYXYxyXy|xyXyxYXYxY
+xxyXYXY|xxYXYxyXy
+xxyXYXY|xxxYXyXy
+xxyXYXY|xyxyxYYXyXy
+xyyxYYXy|xyxyxYYXyXy
+xyyxYYXy|xyxYYXyyyXY
+xyyxYYXy|xyyXyXYYYYY
+xyyyXYYYY|xyyXyXYYYYY
+xyXyxY|xyyXyXYYYYY
+xyXyxY|xxYxYXyyyyy
+xyXyxY|xxxyyyy
+# end

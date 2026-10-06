@@ -4,11 +4,12 @@ Status: **computational certificates and search records, not peer reviewed.** Fi
 **Produced by AI models** under the direction of the repository owner; see [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md).
 
 > [!IMPORTANT]
-> This repository contains AI-produced, computer-checked results that no human has digested. The AC-equivalence
-> certificate (result 1) is a **warrant**: a move sequence replayed by checkers, not a human-readable argument. The capped
-> exhaustive searches (results 2, 3) are evidence from an unverified program, not a proof. We do not regard the
-> AC-equivalence of these presentations to AK(3) or to the trivial presentation as settled either way by this work.
-> We welcome a human-readable treatment, and credit belongs to whoever writes one. Questions, checks and corrections:
+> This repository is a public, timestamped, AI-produced **warrant** for the AC-equivalence of P1 = MS(2, $`x^{-2}y^{-1}x^{2}y`$)
+> (D. Carreras, arXiv:2607.23611) and the presentation C6 below: a machine-checked move sequence that no human has yet
+> digested. The capped exhaustive searches (results 2, 3) are evidence from a program that is tested, including an
+> independent cross-check (`crosscheck/`), but not verified; they are not a proof. We do not regard the questions about
+> these presentations as settled by this work. Independent verification and human-readable expositions are welcome,
+> and credit for a human-readable proof belongs to whoever writes one. Questions, checks and corrections:
 > [GitHub issues](https://github.com/alejandrozarco/andrews-curtis-ms14/issues).
 
 Presentations (relators as words; capital letters are inverses, `X` = $`x^{-1}`$):
@@ -95,12 +96,40 @@ $`L \le 31`$ and $`K = 9`$ is used for $`L = 32`$. The $`\varphi`$-quotient is j
 $`\varphi(\mathrm{AK}(3))`$ (`certs/phi/`, checked by `verify.py`). Validation: the rotation-only variant reproduces the
 component sizes 680,700 (P1) and 1,880,041 (P2) at cap 28 reported in github.com/nahomar/andrews-curtis-solver;
 `validate_projection.py` checks the projection claim on random elementary walks with a negative control.
-The completeness of the enumeration rests on this code; it is not formally verified.
+The completeness of the enumeration rests on this code; it is not formally verified (see the cross-check below).
+
+## Independent cross-check of the enumeration
+
+`crosscheck/crosscheck.py` (Python, no code shared with `acsearch.cpp` apart from decoding its `--dump` key format)
+tests the enumeration on smaller caps, against `acsearch --dump` output:
+
+- **Q** (own quotient search): breadth-first search over the same classes, but with all reduced conjugators
+  $`c`$, $`|c| \le (L - |u| - |v|)/2`$ (not only junction-free ones), and an independent canonical form.
+- **E** (exact graph): breadth-first search of the full exact-word component under the 14 moves of the SAIR ACC
+  verifier (`verifier.core.apply_move`, imported), each state projected to its class; every projected class must lie
+  in the acsearch component.
+
+| start | Q: cap, classes (equal to acsearch) | E: cap, exact states, projected classes (all inside acsearch's) |
+|---|---|---|
+| P1 | 24, 17,718 | 20, 1,219,064, 473 |
+| P2 | 24, 21,932 | 20, 696,024, 521 |
+| C3 | 22, 16,181 | — |
+| C4 | 24, 3,492 | 20, 338,336, 117 |
+| C6 | 24, 3,736 | 20, 408,072, 136 |
+| AK(3) | 21, 18,118 | 17, 857,808, 257 |
+
+Negative control: against acsearch run without conjugator moves ($`K = 0`$) at cap 24, Q finds 118 classes that
+acsearch lacks, for P1 and for P2, so Q detects missing conjugator moves. Up to cap 22 the conjugator moves add no
+classes for P1 and P2, so the cap-20 E tests check the inclusion but cannot detect missing conjugator moves. Q and E
+share the canonical form `klass()`. These tests cover caps up to 24; the enumerations at caps 29–32 are not checked by
+a second program.
+
+`crosscheck/results.txt` has the output; `crosscheck/README.md` the commands.
 
 ## Independent replay with the SAIR ACC reference implementation
 
-`sair_check/` converts every certificate in `certs/` (P1 ~ C6, the five certificates of Carreras, arXiv:2607.23611,
-in `certs/carreras/`) to the move format of github.com/SAIRcompetition/Andrews-Curtis (commit `a0fd6e6`) and replays
+`sair_check/` converts every certificate in `certs/` (P1 ~ C6, and the five certificates accompanying Carreras,
+arXiv:2607.23611, from github.com/joe-carr-data/ac-certificates, in `certs/carreras/`) to the move format of github.com/SAIRcompetition/Andrews-Curtis (commit `a0fd6e6`) and replays
 it with that repository's `verifier.core.apply_move` from its official initial relators; all end states agree with
 `verify.py` (`sair_check/generated/report.json`). The official verifier only accepts trivialisations, so it reports
 `E_NOT_TARGET` for these equivalence certificates, as expected.
@@ -113,10 +142,27 @@ python3 verify.py certs/P1_equiv_C6.json certs/carreras/*.json certs/phi/*.json
 c++ -O2 -std=c++17 -o acsearch acsearch.cpp     # see the header of acsearch.cpp for options
 git clone https://github.com/SAIRcompetition/Andrews-Curtis sair-ac
 SAIR_REPO=sair-ac python3 sair_check/check_all.py
+SAIR_REPO=sair-ac crosscheck/run_crosscheck.sh ./acsearch xc-run   # ~30 min; xc-run/results.txt, DONE or FAIL
 ```
 
 Python 3.9+, no third-party packages for `verify.py`. The cap-32 enumerations need ~2 GB and 20–30 min per start
 (`acsearch_lean.cpp` is the lower-memory variant).
+
+## Inputs in `runs/`
+
+`runs/*.log` are the enumeration logs. `runs/P1_to_C6_c30.paths` (the chain behind `certs/P1_equiv_C6.json`, from
+`acsearch` at cap 30, $`K = 8`$, stopped at the first hit) and `runs/ak3_phi_c20.paths` (chains for `certs/phi/`, from
+`acsearch --nosym` at cap 20 from AK(3) with the $`\varphi`$-images as targets) are the inputs of `make_cert.py` and
+`phi_bridges.py`; both regenerate the stored certificates byte for byte. `runs/exh_P1_c3*.paths` are the chains to C6
+recorded by the exhaustive P1 runs. `runs/val_P1_c24.keys` and `runs/val_P1_c24_k0.keys` (`acsearch --dump` at cap 24
+with $`K = 8`$ and $`K = 0`$) are the inputs of `validate_projection.py`.
+
+## Licence
+
+Apache License 2.0 (`LICENSE`), for the code, certificates and text of this repository. Not covered: the five
+certificates in `certs/carreras/`, copied unchanged from github.com/joe-carr-data/ac-certificates (commit `d347fc4`),
+which remain under the MIT licence of that repository (`certs/carreras/LICENSE`); and the SAIR ACC repository, which
+`sair_check/` and `crosscheck/` import but do not contain.
 
 ## References
 

@@ -9,6 +9,7 @@ the code or the certificates line by line.
   the certificate pipeline, `verify.py`, the SAIR replay in `sair_check/`, the figures and the text.
 - Claude Sonnet 5 (Anthropic) agents ran the C3/C4 enumerations (result 3) and an adversarial read-only review of the
   search claim.
+- gpt-6-astra (OpenAI, via the Codex CLI) reviewed the cross-check in `crosscheck/` (read-only).
 - The commits carry a `Co-Authored-By: Claude Opus 5.5` trailer.
 
 **Reviews.** The AI review process found a real error, which was fixed:
@@ -16,7 +17,14 @@ the code or the certificates line by line.
   version used $`K = 8`$ at cap $`L = 32`$, where $`K = 9`$ is needed. The cap-32 runs were repeated with $`K = 9`$ and
   gave the same components (correction note in `README.md`, commit 7808a9e).
 
-The review also recorded gaps that remain open:
+Later reviews found:
+- inputs needed to rerun parts of the pipeline (`.paths`, `.keys`) missing from the repository (added; see `README.md`,
+  Inputs in `runs/`);
+- that the enumeration rested on unchecked C++ (the cross-check in `crosscheck/` was added);
+- in that cross-check, that states with an empty relator were skipped rather than reported, missing input checks, and
+  that its cap-20 exact-graph tests cannot detect missing conjugator moves (fixed or stated in `crosscheck/README.md`).
+
+The reviews also recorded gaps that remain open:
 - the claim that junction-free conjugators of bounded length suffice (see `acsearch.cpp`) is argued and tested, not
   proved;
 - `acsearch_lean.cpp` shares its move generation and canonicalisation with `acsearch.cpp`, so the two engines are not
@@ -28,13 +36,17 @@ human-readable proof (see the note at the top of `README.md`).
 **What is checked by software**
 - `verify.py` (standard-library Python, written independently of the search code) replays every certificate in
   `certs/` move by move and checks that it ends in the stated orbit of the target.
+- `crosscheck/crosscheck.py` (Python, written independently of `acsearch.cpp`) recomputes capped components at smaller
+  caps, in the quotient graph with all conjugators, and as the full exact-word component under the SAIR moves, and
+  compares them with `acsearch`'s output.
 - `sair_check/` replays the same certificates with `verifier.core.apply_move` of the SAIR ACC repository
   (github.com/SAIRcompetition/Andrews-Curtis); the end states agree with `verify.py`.
 
 What remains to be trusted:
 - the enumeration code (`acsearch.cpp`, `acsearch_lean.cpp`): move generation, canonicalisation and the hash table.
   It is tested (it reproduces published component sizes at cap 28, `validate_projection.py` with a negative control,
-  an independent canonicalisation comparison in the review), not formally verified;
+  the independent cross-check at caps up to 24), not formally verified; the results at caps 29–32 are not checked by
+  any second program;
 - the projection argument from exact-word AC moves to the cyclic quotient graph (`README.md`, Search model);
 - `verify.py` itself (the AC paths from AK(3) to its letter-permuted images in `certs/phi/`, used for the quotient by
   letter permutations, are checked by it).

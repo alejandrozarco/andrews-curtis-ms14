@@ -1,0 +1,13 @@
+[P1 K=8 expect PASS] Q start=XyyxYYY|XXXYxxy cap=24: own classes 17718, acsearch classes 17718, own-not-acsearch 0, acsearch-not-own 0 PASS 244s 
+[P2 K=8 expect PASS] Q start=XyyxYYY|XXXYxxY cap=24: own classes 21932, acsearch classes 21932, own-not-acsearch 0, acsearch-not-own 0 PASS 307s 
+[C4 K=8 expect PASS] Q start=xxxxyXy|xyyyxYY cap=24: own classes 3492, acsearch classes 3492, own-not-acsearch 0, acsearch-not-own 0 PASS 49s 
+[C6 K=8 expect PASS] Q start=xxyxxYY|xyXYYXy cap=24: own classes 3736, acsearch classes 3736, own-not-acsearch 0, acsearch-not-own 0 PASS 32s 
+[C3 K=8 expect PASS] Q start=xxyXy|xyyyyyxYY cap=22: own classes 16181, acsearch classes 16181, own-not-acsearch 0, acsearch-not-own 0 PASS 145s 
+[AK3 K=8 expect PASS] Q start=xxxYYYY|xyxYXY cap=21: own classes 18118, acsearch classes 18118, own-not-acsearch 0, acsearch-not-own 0 PASS 157s 
+[P1 K=0 expect FAIL] Q start=XyyxYYY|XXXYxxy cap=24: own classes 17718, acsearch classes 17600, own-not-acsearch 118, acsearch-not-own 0 FAIL 207s 
+[P1 K=8 expect PASS] E start=XyyxYYY|XXXYxxy cap=20: exact states 1219064, empty-relator states 0, projected classes 473, acsearch classes 473, projected-not-in-acsearch 0 PASS 233s 
+[P2 K=0 expect FAIL] Q start=XyyxYYY|XXXYxxY cap=24: own classes 21932, acsearch classes 21814, own-not-acsearch 118, acsearch-not-own 0 FAIL 295s 
+[C4 K=8 expect PASS] E start=xxxxyXy|xyyyxYY cap=20: exact states 338336, empty-relator states 0, projected classes 117, acsearch classes 117, projected-not-in-acsearch 0 PASS 65s 
+[P2 K=8 expect PASS] E start=XyyxYYY|XXXYxxY cap=20: exact states 696024, empty-relator states 0, projected classes 521, acsearch classes 521, projected-not-in-acsearch 0 PASS 135s 
+[C6 K=8 expect PASS] E start=xxyxxYY|xyXYYXy cap=20: exact states 408072, empty-relator states 0, projected classes 136, acsearch classes 136, projected-not-in-acsearch 0 PASS 75s 
+[AK3 K=8 expect PASS] E start=xxxYYYY|xyxYXY cap=17: exact states 857808, empty-relator states 0, projected classes 257, acsearch classes 257, projected-not-in-acsearch 0 PASS 113s 
