@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite it as below. Not peer reviewed. Produced by AI models under the direction of the repository owner (see AI_DISCLOSURE.md)."
+title: "Andrews–Curtis, two length-14 Miller–Schupp presentations: an AC-equivalence certificate and capped exhaustive searches (unreviewed, AI-produced)"
+type: software
+authors:
+  - name: alejandrozarco
+repository-code: "https://github.com/alejandrozarco/andrews-curtis-ms14"
+abstract: >-
+  An explicit sequence of 1066 elementary Andrews–Curtis moves takes P1 = MS(2, x^-2 y^-1 x^2 y) to the length-14
+  presentation C6 = <x, y | x^2 y x^2 y^-2, x y x^-1 y^-2 x^-1 y>; it is replayed by an independent checker and by the
+  SAIR ACC reference implementation. Complete enumerations of the capped AC components of P1 and
+  P2 = MS(2, x^-2 y^-1 x^2 y^-1) up to total relator length 32 (C3 to 30, C4 to 32) contain neither AK(3), the trivial
+  presentation, nor each other, so under the stated search model any AC path between them reaches total length at
+  least 33. The enumeration program is tested, including an independent cross-check at smaller caps, but not
+  verified. AI-produced, not peer reviewed.
+keywords:
+  - Andrews–Curtis conjecture
+  - balanced presentations
+  - Miller–Schupp presentations
+  - Akbulut–Kirby presentation
+  - computer-assisted search
+license: Apache-2.0
+references:
+  - type: article
+    title: "Machine-checkable equivalence certificates at the length-14 Andrews–Curtis frontier"
+    authors:
+      - {family-names: Carreras, given-names: Josep}
+    identifiers:
+      - type: url
+        value: "https://arxiv.org/abs/2607.23611"
+  - type: software
+    title: "ac-certificates"
+    authors:
+      - name: joe-carr-data
+    repository-code: "https://github.com/joe-carr-data/ac-certificates"
+    commit: "d347fc4764ee55de6fc779fe697769127dde48e3"
+  - type: software
+    title: "andrews-curtis-solver"
+    authors:
+      - name: nahomar
+    repository-code: "https://github.com/nahomar/andrews-curtis-solver"
+  - type: software
+    title: "Andrews-Curtis (SAIR ACC Challenge)"
+    authors:
+      - name: SAIRcompetition
+    repository-code: "https://github.com/SAIRcompetition/Andrews-Curtis"
+    commit: "a0fd6e6"
+  - type: article
+    title: "What makes math problems hard for reinforcement learning: a case study"
+    authors:
+      - {family-names: Shehper, given-names: A.}
+    identifiers:
+      - type: url
+        value: "https://arxiv.org/abs/2408.15332"

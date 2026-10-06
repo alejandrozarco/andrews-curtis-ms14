@@ -1,0 +1,46 @@
+{
+  "title": "Andrews–Curtis, two length-14 Miller–Schupp presentations: an AC-equivalence certificate and capped exhaustive searches (unreviewed, AI-produced)",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "alejandrozarco"
+    }
+  ],
+  "description": "<p>An explicit sequence of 1066 elementary Andrews–Curtis moves takes P1 = MS(2, x<sup>-2</sup>y<sup>-1</sup>x<sup>2</sup>y) to the length-14 presentation C6 = &lt;x, y | x<sup>2</sup>yx<sup>2</sup>y<sup>-2</sup>, xyx<sup>-1</sup>y<sup>-2</sup>x<sup>-1</sup>y&gt;; it is replayed by an independent checker and by the SAIR ACC reference implementation. Complete enumerations of the capped AC components of P1 and P2 = MS(2, x<sup>-2</sup>y<sup>-1</sup>x<sup>2</sup>y<sup>-1</sup>) up to total relator length 32 (C3 to 30, C4 to 32) contain neither AK(3), the trivial presentation, nor each other, so under the stated search model any AC path between them reaches total length at least 33. The enumeration program is tested, including an independent cross-check at smaller caps, but not verified. AI-produced, not peer reviewed.</p><p>A public, timestamped, AI-produced warrant for the AC-equivalence of P1 and C6: a machine-checked move sequence that no human has yet digested. We do not regard the questions about these presentations as settled by it; independent verification and human-readable expositions are welcome.</p>",
+  "keywords": [
+    "Andrews–Curtis conjecture",
+    "balanced presentations",
+    "Miller–Schupp presentations",
+    "Akbulut–Kirby presentation",
+    "computer-assisted search"
+  ],
+  "notes": "Not peer reviewed. Produced by AI models (Claude Opus 5.5 and Claude Sonnet 5; reviews by Claude Sonnet 5 and gpt-6-astra) under the direction of the repository owner; see AI_DISCLOSURE.md. Version 1 (GitHub release v1, 2026-09-30) stated the cap-32 enumeration with a conjugator bound that does not meet the completeness condition; this version contains the corrected runs (same result). The five certificates in certs/carreras/ are copied from joe-carr-data/ac-certificates (commit d347fc4) under its MIT licence.",
+  "related_identifiers": [
+    {
+      "identifier": "arXiv:2607.23611",
+      "relation": "references",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "arXiv:2408.15332",
+      "relation": "references",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://github.com/joe-carr-data/ac-certificates",
+      "relation": "references",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/nahomar/andrews-curtis-solver",
+      "relation": "references",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/SAIRcompetition/Andrews-Curtis",
+      "relation": "references",
+      "resource_type": "software"
+    }
+  ],
+  "license": "Apache-2.0"
+}

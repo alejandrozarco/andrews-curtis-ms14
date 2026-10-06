@@ -5,7 +5,7 @@ Status: **computational certificates and search records, not peer reviewed.** Fi
 
 > [!IMPORTANT]
 > This repository is a public, timestamped, AI-produced **warrant** for the AC-equivalence of P1 = MS(2, $`x^{-2}y^{-1}x^{2}y`$)
-> (D. Carreras, arXiv:2607.23611) and the presentation C6 below: a machine-checked move sequence that no human has yet
+> (J. Carreras, arXiv:2607.23611) and the presentation C6 below: a machine-checked move sequence that no human has yet
 > digested. The capped exhaustive searches (results 2, 3) are evidence from a program that is tested, including an
 > independent cross-check (`crosscheck/`), but not verified; they are not a proof. We do not regard the questions about
 > these presentations as settled by this work. Independent verification and human-readable expositions are welcome,
@@ -166,7 +166,7 @@ which remain under the MIT licence of that repository (`certs/carreras/LICENSE`)
 
 ## References
 
-- D. Carreras, arXiv:2607.23611 (2026).
+- J. Carreras, *Machine-checkable equivalence certificates at the length-14 Andrews–Curtis frontier*, arXiv:2607.23611 (2026).
 - A. Shehper et al., *What makes math problems hard for reinforcement learning: a case study*, arXiv:2408.15332 (2024).
 - github.com/nahomar/andrews-curtis-solver (2026).
 - SAIR ACC Challenge, github.com/SAIRcompetition/Andrews-Curtis.
