@@ -16,6 +16,11 @@ Status: **computational certificates and search records, not peer reviewed.** Fi
 Archived on Zenodo: [10.5281/zenodo.23196601](https://doi.org/10.5281/zenodo.23196601) (all versions). Cite with
 `CITATION.cff`.
 
+Related: the same search engine, run on all 2,672 SAIR ACC problems unsolved on 2026-09-30 (peak lower bounds and
+groups of problems that are AC-trivial together), is in
+[andrews-curtis-sair-census](https://github.com/alejandrozarco/andrews-curtis-sair-census)
+([10.5281/zenodo.24024379](https://doi.org/10.5281/zenodo.24024379)).
+
 Presentations (relators as words; capital letters are inverses, `X` = $`x^{-1}`$):
 
 | name | relators | SAIR ACC id |
