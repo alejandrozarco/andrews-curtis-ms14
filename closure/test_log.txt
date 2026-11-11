@@ -1,0 +1,741 @@
+=== 1. positive runs
+engine: RESULT start=XyyxYYY|XXXYxxy cap=20 conj=10 nosym=0 states=473 levels=51 complete=1 hit=0 overflow=0 time=0s
+---- check P1_c20  (--cap 20 --start 'XyyxYYY|XXXYxxy' --exact-bfs --selftest 300)
+cap L = 20
+start (exact, freely reduced): XyyxYYY | XXXYxxy   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 473 of 473 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 473  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXY|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): IN S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+selftest: 300 classes, restricted M-results == brute-force results (all c, |c|<=(L-|u|-|v|)/2): yes
+closure: 1452 move results with total <= 20 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.00 s with 2 thread(s) = 7.94 us/class (thread-seconds), 251774 classes/s
+exact BFS: 1219064 exact states, 473 projected classes, empty-relator states hit: 0 (1.4 s)
+exact BFS: projected classes not in S: 0; classes of S not projected: 0  => S == projection of exact capped component
+RESULT: PASS  (classes=473, start in S, results outside S=0)
+engine: RESULT start=XyyxYYY|XXXYxxy cap=21 conj=10 nosym=0 states=1207 levels=60 complete=1 hit=0 overflow=0 time=0s
+---- check P1_c21  (--cap 21 --start 'XyyxYYY|XXXYxxy' --exact-bfs --selftest 300)
+cap L = 21
+start (exact, freely reduced): XyyxYYY | XXXYxxy   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 1207 of 1207 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 1207  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXY|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): IN S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+selftest: 300 classes, restricted M-results == brute-force results (all c, |c|<=(L-|u|-|v|)/2): yes
+closure: 4120 move results with total <= 21 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.00 s with 2 thread(s) = 6.92 us/class (thread-seconds), 288966 classes/s
+exact BFS: 15133856 exact states, 1207 projected classes, empty-relator states hit: 0 (22.1 s)
+exact BFS: projected classes not in S: 0; classes of S not projected: 0  => S == projection of exact capped component
+RESULT: PASS  (classes=1207, start in S, results outside S=0)
+engine: RESULT start=XyyxYYY|XXXYxxy cap=22 conj=11 nosym=0 states=2738 levels=63 complete=1 hit=0 overflow=0 time=0s
+---- check P1_c22  (--cap 22 --start 'XyyxYYY|XXXYxxy' --exact-bfs --selftest 300)
+cap L = 22
+start (exact, freely reduced): XyyxYYY | XXXYxxy   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 2738 of 2738 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 2738  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXY|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): IN S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+selftest: 300 classes, restricted M-results == brute-force results (all c, |c|<=(L-|u|-|v|)/2): yes
+closure: 9750 move results with total <= 22 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.01 s with 2 thread(s) = 9.04 us/class (thread-seconds), 221179 classes/s
+exact BFS: 37464032 exact states, 2738 projected classes, empty-relator states hit: 0 (58.2 s)
+exact BFS: projected classes not in S: 0; classes of S not projected: 0  => S == projection of exact capped component
+RESULT: PASS  (classes=2738, start in S, results outside S=0)
+engine: RESULT start=XyyxYYY|XXXYxxy cap=23 conj=11 nosym=0 states=7903 levels=74 complete=1 hit=0 overflow=0 time=0s
+---- check P1_c23  (--cap 23 --start 'XyyxYYY|XXXYxxy' )
+cap L = 23
+start (exact, freely reduced): XyyxYYY | XXXYxxy   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 7903 of 7903 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 7903  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXY|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): IN S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 30338 move results with total <= 23 examined
+closure: 80 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.02 s with 2 thread(s) = 4.87 us/class (thread-seconds), 410755 classes/s
+RESULT: PASS  (classes=7903, start in S, results outside S=0)
+engine: RESULT start=XyyxYYY|XXXYxxy cap=24 conj=12 nosym=0 states=17718 levels=93 complete=1 hit=0 overflow=0 time=1s
+---- check P1_c24  (--cap 24 --start 'XyyxYYY|XXXYxxy' )
+cap L = 24
+start (exact, freely reduced): XyyxYYY | XXXYxxy   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 17718 of 17718 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 17718  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXY|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): IN S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 72960 move results with total <= 24 examined
+closure: 80 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.04 s with 2 thread(s) = 5.04 us/class (thread-seconds), 397140 classes/s
+RESULT: PASS  (classes=17718, start in S, results outside S=0)
+engine: RESULT start=XyyxYYY|XXXYxxY cap=20 conj=10 nosym=0 states=521 levels=51 complete=1 hit=0 overflow=0 time=0s
+---- check P2_c20  (--cap 20 --start 'XyyxYYY|XXXYxxY' --exact-bfs --selftest 300)
+cap L = 20
+start (exact, freely reduced): XyyxYYY | XXXYxxY   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 521 of 521 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 521  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXy|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): IN S
+selftest: 300 classes, restricted M-results == brute-force results (all c, |c|<=(L-|u|-|v|)/2): yes
+closure: 1622 move results with total <= 20 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.00 s with 2 thread(s) = 7.08 us/class (thread-seconds), 282423 classes/s
+exact BFS: 696024 exact states, 521 projected classes, empty-relator states hit: 0 (0.7 s)
+exact BFS: projected classes not in S: 0; classes of S not projected: 0  => S == projection of exact capped component
+RESULT: PASS  (classes=521, start in S, results outside S=0)
+engine: RESULT start=XyyxYYY|XXXYxxY cap=21 conj=10 nosym=0 states=1413 levels=62 complete=1 hit=0 overflow=0 time=0s
+---- check P2_c21  (--cap 21 --start 'XyyxYYY|XXXYxxY' --exact-bfs --selftest 300)
+cap L = 21
+start (exact, freely reduced): XyyxYYY | XXXYxxY   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 1413 of 1413 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 1413  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXy|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): IN S
+selftest: 300 classes, restricted M-results == brute-force results (all c, |c|<=(L-|u|-|v|)/2): yes
+closure: 4846 move results with total <= 21 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.01 s with 2 thread(s) = 8.86 us/class (thread-seconds), 225615 classes/s
+exact BFS: 4458672 exact states, 1413 projected classes, empty-relator states hit: 0 (6.1 s)
+exact BFS: projected classes not in S: 0; classes of S not projected: 0  => S == projection of exact capped component
+RESULT: PASS  (classes=1413, start in S, results outside S=0)
+engine: RESULT start=XyyxYYY|XXXYxxY cap=22 conj=11 nosym=0 states=3186 levels=73 complete=1 hit=0 overflow=0 time=0s
+---- check P2_c22  (--cap 22 --start 'XyyxYYY|XXXYxxY' )
+cap L = 22
+start (exact, freely reduced): XyyxYYY | XXXYxxY   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 3186 of 3186 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 3186  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXy|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): IN S
+closure: 11288 move results with total <= 22 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.01 s with 2 thread(s) = 8.48 us/class (thread-seconds), 235801 classes/s
+RESULT: PASS  (classes=3186, start in S, results outside S=0)
+engine: RESULT start=XyyxYYY|XXXYxxY cap=23 conj=11 nosym=0 states=9866 levels=74 complete=1 hit=0 overflow=0 time=0s
+---- check P2_c23  (--cap 23 --start 'XyyxYYY|XXXYxxY' )
+cap L = 23
+start (exact, freely reduced): XyyxYYY | XXXYxxY   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 9866 of 9866 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 9866  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXy|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): IN S
+closure: 37782 move results with total <= 23 examined
+closure: 160 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.03 s with 2 thread(s) = 5.22 us/class (thread-seconds), 382958 classes/s
+RESULT: PASS  (classes=9866, start in S, results outside S=0)
+engine: RESULT start=XyyxYYY|XXXYxxY cap=24 conj=12 nosym=0 states=21932 levels=93 complete=1 hit=0 overflow=0 time=1s
+---- check P2_c24  (--cap 24 --start 'XyyxYYY|XXXYxxY' )
+cap L = 24
+start (exact, freely reduced): XyyxYYY | XXXYxxY   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 21932 of 21932 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 21932  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXy|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): IN S
+closure: 90696 move results with total <= 24 examined
+closure: 160 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.06 s with 2 thread(s) = 5.11 us/class (thread-seconds), 391455 classes/s
+RESULT: PASS  (classes=21932, start in S, results outside S=0)
+engine: RESULT start=xxxYYYY|xyxYXY cap=17 conj=8 nosym=0 states=257 levels=18 complete=1 hit=0 overflow=0 time=0s
+---- check AK3_c17  (--cap 17 --start 'xxxYYYY|xyxYXY' --exact-bfs --selftest 300)
+cap L = 17
+start (exact, freely reduced): xxxYYYY | xyxYXY   total 13
+start abelianisation determinant = 1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 257 of 257 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 257  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xyxYXY|xxxxYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): IN S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+selftest: 300 classes, restricted M-results == brute-force results (all c, |c|<=(L-|u|-|v|)/2): yes
+closure: 880 move results with total <= 17 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.00 s with 2 thread(s) = 7.13 us/class (thread-seconds), 280427 classes/s
+exact BFS: 857808 exact states, 257 projected classes, empty-relator states hit: 0 (0.9 s)
+exact BFS: projected classes not in S: 0; classes of S not projected: 0  => S == projection of exact capped component
+RESULT: PASS  (classes=257, start in S, results outside S=0)
+engine: RESULT start=xxxYYYY|xyxYXY cap=18 conj=9 nosym=0 states=542 levels=23 complete=1 hit=0 overflow=0 time=0s
+---- check AK3_c18  (--cap 18 --start 'xxxYYYY|xyxYXY' --exact-bfs --selftest 300)
+cap L = 18
+start (exact, freely reduced): xxxYYYY | xyxYXY   total 13
+start abelianisation determinant = 1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 542 of 542 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 542  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xyxYXY|xxxxYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): IN S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+selftest: 300 classes, restricted M-results == brute-force results (all c, |c|<=(L-|u|-|v|)/2): yes
+closure: 1917 move results with total <= 18 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.00 s with 2 thread(s) = 5.27 us/class (thread-seconds), 379419 classes/s
+exact BFS: 2014992 exact states, 542 projected classes, empty-relator states hit: 0 (2.2 s)
+exact BFS: projected classes not in S: 0; classes of S not projected: 0  => S == projection of exact capped component
+RESULT: PASS  (classes=542, start in S, results outside S=0)
+engine: RESULT start=xxxYYYY|xyxYXY cap=19 conj=9 nosym=0 states=2530 levels=27 complete=1 hit=0 overflow=0 time=0s
+---- check AK3_c19  (--cap 19 --start 'xxxYYYY|xyxYXY' --exact-bfs --selftest 300)
+cap L = 19
+start (exact, freely reduced): xxxYYYY | xyxYXY   total 13
+start abelianisation determinant = 1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 2530 of 2530 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 2530  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xyxYXY|xxxxYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): IN S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+selftest: 300 classes, restricted M-results == brute-force results (all c, |c|<=(L-|u|-|v|)/2): yes
+closure: 10169 move results with total <= 19 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.01 s with 2 thread(s) = 8.28 us/class (thread-seconds), 241663 classes/s
+exact BFS: 23609984 exact states, 2530 projected classes, empty-relator states hit: 0 (31.7 s)
+exact BFS: projected classes not in S: 0; classes of S not projected: 0  => S == projection of exact capped component
+RESULT: PASS  (classes=2530, start in S, results outside S=0)
+engine: RESULT start=xxxYYYY|xyxYXY cap=20 conj=10 nosym=0 states=5020 levels=31 complete=1 hit=0 overflow=0 time=0s
+---- check AK3_c20  (--cap 20 --start 'xxxYYYY|xyxYXY' )
+cap L = 20
+start (exact, freely reduced): xxxYYYY | xyxYXY   total 13
+start abelianisation determinant = 1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 5020 of 5020 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 5020  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xyxYXY|xxxxYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): IN S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 20667 move results with total <= 20 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.02 s with 2 thread(s) = 7.21 us/class (thread-seconds), 277531 classes/s
+RESULT: PASS  (classes=5020, start in S, results outside S=0)
+engine: RESULT start=xxxYYYY|xyxYXY cap=21 conj=10 nosym=0 states=18118 levels=33 complete=1 hit=0 overflow=0 time=1s
+---- check AK3_c21  (--cap 21 --start 'xxxYYYY|xyxYXY' )
+cap L = 21
+start (exact, freely reduced): xxxYYYY | xyxYXY   total 13
+start abelianisation determinant = 1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 18118 of 18118 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 18118  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xyxYXY|xxxxYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): IN S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 83505 move results with total <= 21 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.04 s with 2 thread(s) = 4.23 us/class (thread-seconds), 472313 classes/s
+RESULT: PASS  (classes=18118, start in S, results outside S=0)
+=== 1b. nonempty conjugators: short start xxY|xyxYXY (determinant 1) at cap 14, where (N) moves with |e| up to 5 occur
+engine: RESULT start=xxY|xyxYXY cap=14 conj=7 nosym=0 states=7374 levels=16 complete=1 hit=0 overflow=0 time=0s
+---- check S5_c14  (--cap 14 --start 'xxY|xyxYXY' --exact-bfs --selftest 300)
+cap L = 14
+start (exact, freely reduced): xxY | xyxYXY   total 9
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 7374 of 7374 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 7374  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxy|xyXyxY : IN S
+target x|y                    (total  2): IN S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+selftest: 300 classes, restricted M-results == brute-force results (all c, |c|<=(L-|u|-|v|)/2): yes
+closure: 90164 move results with total <= 14 examined
+closure: 542 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.02 s with 2 thread(s) = 5.53 us/class (thread-seconds), 361523 classes/s
+exact BFS: 14399816 exact states, 7374 projected classes, empty-relator states hit: 0 (21.5 s)
+exact BFS: projected classes not in S: 0; classes of S not projected: 0  => S == projection of exact capped component
+RESULT: PASS  (classes=7374, start in S, results outside S=0)
+=== 1c. negative: the same start with the conjugator bound cut to 0..4 (each must FAIL)
+engine: RESULT start=xxY|xyxYXY cap=14 conj=0 nosym=0 states=6999 levels=16 complete=1 hit=0 overflow=0 time=0s
+---- check S5_c14_k0  (--cap 14 --start 'xxY|xyxYXY' )
+cap L = 14
+start (exact, freely reduced): xxY | xyxYXY   total 9
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 6999 of 6999 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 6999  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxy|xyXyxY : IN S
+target x|y                    (total  2): IN S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 87235 move results with total <= 14 examined
+closure: 542 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 1400 results NOT in S (375 distinct classes)
+  x|xy  --[replace v by CR(rot_0(v) e rot_0(u^+1) e^-1), e='yxYxy']-->  xyyxYxyxYXyXY|x  (class x|xyxYxyXYXyxYY, total 14)
+  x|xy  --[replace v by CR(rot_0(v) e rot_0(u^+1) e^-1), e='yxYXy']-->  xyyxYXyxYxyXY|x  (class x|xyxYXyxYYxyXY, total 14)
+  x|xy  --[replace v by CR(rot_0(v) e rot_0(u^+1) e^-1), e='yxYYY']-->  xyyxYYYxyyyXY|x  (class x|xyXYYXyyyXYYY, total 14)
+  x|xy  --[replace v by CR(rot_0(v) e rot_0(u^+1) e^-1), e='yXYxy']-->  xyyXYxyxYXyxY|x  (class x|xyxYXyxYxyXYY, total 14)
+  x|xy  --[replace v by CR(rot_0(v) e rot_0(u^+1) e^-1), e='yXYXy']-->  xyyXYXyxYxyxY|x  (class x|xyxYxyxYXyXYY, total 14)
+closure time: 0.02 s with 2 thread(s) = 5.63 us/class (thread-seconds), 355458 classes/s
+RESULT: FAIL  (classes=6999, start in S, results outside S=1400)
+engine: RESULT start=xxY|xyxYXY cap=14 conj=1 nosym=0 states=7366 levels=16 complete=1 hit=0 overflow=0 time=0s
+---- check S5_c14_k1  (--cap 14 --start 'xxY|xyxYXY' )
+cap L = 14
+start (exact, freely reduced): xxY | xyxYXY   total 9
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 7366 of 7366 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 7366  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxy|xyXyxY : IN S
+target x|y                    (total  2): IN S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 90136 move results with total <= 14 examined
+closure: 542 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 24 results NOT in S (8 distinct classes)
+  x|xy  --[replace v by CR(rot_0(v) e rot_0(u^+1) e^-1), e='yyxYY']-->  xyyyxYYxyyXYY|x  (class x|xyyxYYXyyxYYY, total 14)
+  x|xy  --[replace v by CR(rot_0(v) e rot_0(u^+1) e^-1), e='yyXYY']-->  xyyyXYYxyyxYY|x  (class x|xyyxYYxyyXYYY, total 14)
+  x|xy  --[replace v by CR(rot_0(v) e rot_0(u^+1) e^-1), e='yyyyy']-->  xyyyyyyxYYYYY|x  (class x|xyyyyyxYYYYYY, total 14)
+  x|xy  --[replace v by CR(rot_1(v) e rot_0(u^+1) e^-1), e='YYxyy']-->  yxYYxyyxYYXyy|x  (class x|xyyxYYxyyXYYY, total 14)
+  x|xy  --[replace v by CR(rot_1(v) e rot_0(u^+1) e^-1), e='YYXyy']-->  yxYYXyyxYYxyy|x  (class x|xyyxYYXyyxYYY, total 14)
+closure time: 0.02 s with 2 thread(s) = 6.67 us/class (thread-seconds), 299903 classes/s
+RESULT: FAIL  (classes=7366, start in S, results outside S=24)
+engine: RESULT start=xxY|xyxYXY cap=14 conj=2 nosym=0 states=7372 levels=16 complete=1 hit=0 overflow=0 time=0s
+---- check S5_c14_k2  (--cap 14 --start 'xxY|xyxYXY' )
+cap L = 14
+start (exact, freely reduced): xxY | xyxYXY   total 9
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 7372 of 7372 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 7372  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxy|xyXyxY : IN S
+target x|y                    (total  2): IN S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 90160 move results with total <= 14 examined
+closure: 542 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 4 results NOT in S (2 distinct classes)
+  x|xy  --[replace v by CR(rot_0(v) e rot_0(u^+1) e^-1), e='yyyyy']-->  xyyyyyyxYYYYY|x  (class x|xyyyyyxYYYYYY, total 14)
+  x|xy  --[replace v by CR(rot_1(v) e rot_0(u^+1) e^-1), e='YYYYY']-->  yxYYYYYxyyyyy|x  (class x|xyyyyyxYYYYYY, total 14)
+  x|xy  --[replace v by CR(rot_0(v) e rot_0(u^-1) e^-1), e='yyyyy']-->  xyyyyyyXYYYYY|x  (class x|xyyyyyXYYYYYY, total 14)
+  x|xy  --[replace v by CR(rot_1(v) e rot_0(u^-1) e^-1), e='YYYYY']-->  yxYYYYYXyyyyy|x  (class x|xyyyyyXYYYYYY, total 14)
+closure time: 0.02 s with 2 thread(s) = 5.98 us/class (thread-seconds), 334540 classes/s
+RESULT: FAIL  (classes=7372, start in S, results outside S=4)
+engine: RESULT start=xxY|xyxYXY cap=14 conj=3 nosym=0 states=7372 levels=16 complete=1 hit=0 overflow=0 time=0s
+---- check S5_c14_k3  (--cap 14 --start 'xxY|xyxYXY' )
+cap L = 14
+start (exact, freely reduced): xxY | xyxYXY   total 9
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 7372 of 7372 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 7372  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxy|xyXyxY : IN S
+target x|y                    (total  2): IN S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 90160 move results with total <= 14 examined
+closure: 542 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 4 results NOT in S (2 distinct classes)
+  x|xy  --[replace v by CR(rot_0(v) e rot_0(u^+1) e^-1), e='yyyyy']-->  xyyyyyyxYYYYY|x  (class x|xyyyyyxYYYYYY, total 14)
+  x|xy  --[replace v by CR(rot_1(v) e rot_0(u^+1) e^-1), e='YYYYY']-->  yxYYYYYxyyyyy|x  (class x|xyyyyyxYYYYYY, total 14)
+  x|xy  --[replace v by CR(rot_0(v) e rot_0(u^-1) e^-1), e='yyyyy']-->  xyyyyyyXYYYYY|x  (class x|xyyyyyXYYYYYY, total 14)
+  x|xy  --[replace v by CR(rot_1(v) e rot_0(u^-1) e^-1), e='YYYYY']-->  yxYYYYYXyyyyy|x  (class x|xyyyyyXYYYYYY, total 14)
+closure time: 0.02 s with 2 thread(s) = 5.67 us/class (thread-seconds), 352952 classes/s
+RESULT: FAIL  (classes=7372, start in S, results outside S=4)
+engine: RESULT start=xxY|xyxYXY cap=14 conj=4 nosym=0 states=7372 levels=16 complete=1 hit=0 overflow=0 time=0s
+---- check S5_c14_k4  (--cap 14 --start 'xxY|xyxYXY' )
+cap L = 14
+start (exact, freely reduced): xxY | xyxYXY   total 9
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 7372 of 7372 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 7372  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxy|xyXyxY : IN S
+target x|y                    (total  2): IN S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 90160 move results with total <= 14 examined
+closure: 542 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 4 results NOT in S (2 distinct classes)
+  x|xy  --[replace v by CR(rot_0(v) e rot_0(u^+1) e^-1), e='yyyyy']-->  xyyyyyyxYYYYY|x  (class x|xyyyyyxYYYYYY, total 14)
+  x|xy  --[replace v by CR(rot_1(v) e rot_0(u^+1) e^-1), e='YYYYY']-->  yxYYYYYxyyyyy|x  (class x|xyyyyyxYYYYYY, total 14)
+  x|xy  --[replace v by CR(rot_0(v) e rot_0(u^-1) e^-1), e='yyyyy']-->  xyyyyyyXYYYYY|x  (class x|xyyyyyXYYYYYY, total 14)
+  x|xy  --[replace v by CR(rot_1(v) e rot_0(u^-1) e^-1), e='YYYYY']-->  yxYYYYYXyyyyy|x  (class x|xyyyyyXYYYYYY, total 14)
+closure time: 0.02 s with 2 thread(s) = 5.17 us/class (thread-seconds), 386646 classes/s
+RESULT: FAIL  (classes=7372, start in S, results outside S=4)
+=== 2a. negative: --conj 0 at cap 24
+engine: RESULT start=XyyxYYY|XXXYxxy cap=24 conj=0 nosym=0 states=17600 levels=93 complete=1 hit=0 overflow=0 time=1s
+---- check P1_c24_k0  (--cap 24 --start 'XyyxYYY|XXXYxxy' )
+cap L = 24
+start (exact, freely reduced): XyyxYYY | XXXYxxy   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 17600 of 17600 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 17600  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXY|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): IN S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 72842 move results with total <= 24 examined
+closure: 80 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 118 results NOT in S (118 distinct classes)
+  xxxyXXY|xyxYYxyy  --[replace v by CR(rot_0(v) e rot_0(u^+1) e^-1), e='y']-->  xyxYYxyyyxxxyXXYY|xxxyXXY  (class xxxyXXY|xxxyXXYYxyxYYxyyy, total 24)
+  xxxyXXY|xyxYYxyy  --[replace v by CR(rot_0(v) e rot_1(u^+1) e^-1), e='y']-->  xyxYYxyyyxxyXXYxY|xxxyXXY  (class xxxyXXY|xxyXXYxYxyxYYxyyy, total 24)
+  xxxyXXY|xyxYYxyy  --[replace v by CR(rot_0(v) e rot_2(u^+1) e^-1), e='y']-->  xyxYYxyyyxyXXYxxY|xxxyXXY  (class xxxyXXY|xxyXXYxYYYxyyxYxy, total 24)
+  xxxyXXY|xyxYYxyy  --[replace v by CR(rot_0(v) e rot_3(u^+1) e^-1), e='y']-->  xyxYYxyyyyXXYxxxY|xxxyXXY  (class xxxyXXY|xxxyXXYYYYxyyxYxy, total 24)
+  xxxyXXY|xyxYYxyy  --[replace v by CR(rot_0(v) e rot_4(u^+1) e^-1), e='X']-->  xyxYYxyyXXXYxxxyx|xxxyXXY  (class xxxyXXY|xxxyxxyxYYxyyXXXY, total 24)
+closure time: 0.05 s with 2 thread(s) = 5.31 us/class (thread-seconds), 376380 classes/s
+RESULT: FAIL  (classes=17600, start in S, results outside S=118)
+engine: RESULT start=XyyxYYY|XXXYxxY cap=24 conj=0 nosym=0 states=21814 levels=93 complete=1 hit=0 overflow=0 time=1s
+---- check P2_c24_k0  (--cap 24 --start 'XyyxYYY|XXXYxxY' )
+cap L = 24
+start (exact, freely reduced): XyyxYYY | XXXYxxY   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 21814 of 21814 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 21814  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXy|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): IN S
+closure: 90578 move results with total <= 24 examined
+closure: 160 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 118 results NOT in S (118 distinct classes)
+  xxxyXXY|xyxYYXyy  --[replace v by CR(rot_0(v) e rot_0(u^+1) e^-1), e='y']-->  xyxYYXyyyxxxyXXYY|xxxyXXY  (class xxxyXXY|xxxyXXYYxyxYYXyyy, total 24)
+  xxxyXXY|xyxYYXyy  --[replace v by CR(rot_0(v) e rot_1(u^+1) e^-1), e='y']-->  xyxYYXyyyxxyXXYxY|xxxyXXY  (class xxxyXXY|xxyXXYxYxyxYYXyyy, total 24)
+  xxxyXXY|xyxYYXyy  --[replace v by CR(rot_0(v) e rot_2(u^+1) e^-1), e='y']-->  xyxYYXyyyxyXXYxxY|xxxyXXY  (class xxxyXXY|xxyXXYxYYYXyyxYxy, total 24)
+  xxxyXXY|xyxYYXyy  --[replace v by CR(rot_0(v) e rot_3(u^+1) e^-1), e='y']-->  xyxYYXyyyyXXYxxxY|xxxyXXY  (class xxxyXXY|xxxyXXYYYYXyyxYxy, total 24)
+  xxxyXXY|xyxYYXyy  --[replace v by CR(rot_0(v) e rot_4(u^+1) e^-1), e='X']-->  xyxYYXyyXXXYxxxyx|xxxyXXY  (class xxxyXXY|xxxyxxyxYYXyyXXXY, total 24)
+closure time: 0.06 s with 2 thread(s) = 5.16 us/class (thread-seconds), 387414 classes/s
+RESULT: FAIL  (classes=21814, start in S, results outside S=118)
+=== 2b. negative: one class removed
+removed key #551 of 2738: xxxyXXY|xxxxyxYYXyXXXy (total 21)
+---- check P1_c22_drop1  (--cap 22 --start 'XyyxYYY|XXXYxxy' )
+cap L = 22
+start (exact, freely reduced): XyyxYYY | XXXYxxy   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 2737 of 2737 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 2737  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXY|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): IN S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 9746 move results with total <= 22 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 4 results NOT in S (1 distinct classes)
+  xxxyXXY|xxyxYYXyy  --[replace v by CR(rot_0(v) e rot_3(u^-1) e^-1), e='']-->  xxyxYYXyXXXyxx|xxxyXXY  (class xxxyXXY|xxxxyxYYXyXXXy, total 21)
+  xxxyXXY|xxxyXyXXXYYxy  --[replace v by CR(rot_8(v) e rot_1(u^-1) e^-1), e='']-->  XYYxyxxxyXXXXy|xxxyXXY  (class xxxyXXY|xxxxyxYYXyXXXy, total 21)
+  xxxyXXY|xxxxyxyXXXXyXYY  --[replace v by CR(rot_5(v) e rot_3(u^-1) e^-1), e='']-->  xyXXXXyXYYxyxx|xxxyXXY  (class xxxyXXY|xxxxyxYYXyXXXy, total 21)
+  xxxyXXY|xxxyyXXYXyXYYxy  --[replace v by CR(rot_8(v) e rot_0(u^-1) e^-1), e='']-->  XyXYYxyxxxyXXX|xxxyXXY  (class xxxyXXY|xxxxyxYYXyXXXy, total 21)
+closure time: 0.01 s with 2 thread(s) = 8.98 us/class (thread-seconds), 222736 classes/s
+RESULT: FAIL  (classes=2737, start in S, results outside S=4)
+removed key #232 of 2738: xxxyXXY|xxxxyXXyxyxYY (total 20)
+---- check P1_c22_drop2  (--cap 22 --start 'XyyxYYY|XXXYxxy' )
+cap L = 22
+start (exact, freely reduced): XyyxYYY | XXXYxxy   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 2737 of 2737 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 2737  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXY|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): IN S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 9746 move results with total <= 22 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 4 results NOT in S (1 distinct classes)
+  xxxyXXY|xyxYYxyy  --[replace v by CR(rot_7(v) e rot_6(u^+1) e^-1), e='']-->  yxyxYYxxxxyXX|xxxyXXY  (class xxxyXXY|xxxxyXXyxyxYY, total 20)
+  xxxyXXY|xxxxyxyXyxYY  --[replace v by CR(rot_8(v) e rot_2(u^-1) e^-1), e='']-->  yxYYxxxxyXXyx|xxxyXXY  (class xxxyXXY|xxxxyXXyxyxYY, total 20)
+  xxxyXXY|xxyxYxYXXYxy  --[replace v by CR(rot_2(v) e rot_4(u^+1) e^-1), e='']-->  yxYxYXXYxxxxy|xxxyXXY  (class xxxyXXY|xxxxyXXyxyxYY, total 20)
+  xxyxyXXy|xxYXYXyyXYYYY  --[replace u by CR(rot_0(u) e rot_12(v^+1) e^-1), e='']-->  xyyXYYY|xxYXYXyyXYYYY  (class xxxyXXY|xxxxyXXyxyxYY, total 20)
+closure time: 0.01 s with 2 thread(s) = 8.46 us/class (thread-seconds), 236454 classes/s
+RESULT: FAIL  (classes=2737, start in S, results outside S=4)
+removed key #975 of 2738: xxxyXXY|xxYxYXyyxyxYXy (total 21)
+---- check P1_c22_drop3  (--cap 22 --start 'XyyxYYY|XXXYxxy' )
+cap L = 22
+start (exact, freely reduced): XyyxYYY | XXXYxxy   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 2737 of 2737 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 2737  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXY|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): IN S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 9747 move results with total <= 22 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 3 results NOT in S (1 distinct classes)
+  xxxyXXY|xxxyxYxYYXy  --[replace v by CR(rot_3(v) e rot_5(u^-1) e^-1), e='']-->  yxYxYYXyxyxxYX|xxxyXXY  (class xxxyXXY|xxYxYXyyxyxYXy, total 21)
+  xxxyXXY|xxyxxYxYXyyxyXY  --[replace v by CR(rot_2(v) e rot_5(u^-1) e^-1), e='']-->  yxxYxYXyyxyxYX|xxxyXXY  (class xxxyXXY|xxYxYXyyxyxYXy, total 21)
+  xxxyXXY|xxyXyxxYXyxYxYY  --[replace v by CR(rot_4(v) e rot_2(u^-1) e^-1), e='']-->  yxxYXyxYxYYXyx|xxxyXXY  (class xxxyXXY|xxYxYXyyxyxYXy, total 21)
+closure time: 0.01 s with 2 thread(s) = 8.54 us/class (thread-seconds), 234326 classes/s
+RESULT: FAIL  (classes=2737, start in S, results outside S=3)
+removed key #1674 of 2738: xxxyXXY|xxxyXyyXyXXXYYY (total 22)
+---- check P1_c22_dropmax  (--cap 22 --start 'XyyxYYY|XXXYxxy' )
+cap L = 22
+start (exact, freely reduced): XyyxYYY | XXXYxxy   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 2737 of 2737 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 2737  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXY|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): IN S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 9749 move results with total <= 22 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 1 results NOT in S (1 distinct classes)
+  xxxyXXY|xxxYxYYXyy  --[replace v by CR(rot_8(v) e rot_1(u^-1) e^-1), e='']-->  yyxxxYxYYxYXXXy|xxxyXXY  (class xxxyXXY|xxxyXyyXyXXXYYY, total 22)
+closure time: 0.01 s with 2 thread(s) = 9.27 us/class (thread-seconds), 215759 classes/s
+RESULT: FAIL  (classes=2737, start in S, results outside S=1)
+removed key #15553 of 21932: xxxyXXY|xxxyyxyyxxYxyXYYY (total 24)
+---- check P2_c24_dropmax  (--cap 24 --start 'XyyxYYY|XXXYxxY' )
+cap L = 24
+start (exact, freely reduced): XyyxYYY | XXXYxxY   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 21931 of 21931 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 21931  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXy|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): IN S
+closure: 90694 move results with total <= 24 examined
+closure: 160 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 2 results NOT in S (1 distinct classes)
+  xxxyXXY|xxxxyXYYYxxxyyxy  --[replace v by CR(rot_3(v) e rot_4(u^-1) e^-1), e='']-->  xyXYYYxxxyyxyyxxY|xxxyXXY  (class xxxyXXY|xxxyyxyyxxYxyXYYY, total 24)
+  xxxyXXY|xxyxyyxxYxyXYY  --[replace v by CR(rot_2(v) e rot_4(u^+1) e^-1), e='']-->  yxyyxxYxyXYYYxxxy|xxxyXXY  (class xxxyXXY|xxxyyxyyxxYxyXYYY, total 24)
+closure time: 0.05 s with 2 thread(s) = 4.58 us/class (thread-seconds), 436614 classes/s
+RESULT: FAIL  (classes=21931, start in S, results outside S=2)
+removed key #8372 of 18118: xyxyxY|xxxyxYXXyxyyxYY (total 21)
+---- check AK3_c21_drop5  (--cap 21 --start 'xxxYYYY|xyxYXY' )
+cap L = 21
+start (exact, freely reduced): xxxYYYY | xyxYXY   total 13
+start abelianisation determinant = 1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 18117 of 18117 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 18117  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xyxYXY|xxxxYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): IN S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 83501 move results with total <= 21 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 4 results NOT in S (1 distinct classes)
+  xyxyxY|xxxyXXyyXYYXY  --[replace v by CR(rot_4(v) e rot_4(u^-1) e^-1), e='']-->  XXyyXYYXYxxyXYX|xyxyxY  (class xyxyxY|xxxyxYXXyxyyxYY, total 21)
+  xyxyxY|xxxyxYXXXyXyxYY  --[replace v by CR(rot_11(v) e rot_4(u^+1) e^-1), e='']-->  yxYYxxxyxYXXyxy|xyxyxY  (class xyxyxY|xxxyxYXXyxyyxYY, total 21)
+  xyxyxY|xxxyxYXXyxyXYXY  --[replace v by CR(rot_14(v) e rot_0(u^+1) e^-1), e='']-->  YxxxyxYXXyxyyxY|xyxyxY  (class xyxyxY|xxxyxYXXyxyyxYY, total 21)
+  xyxyxY|xxyXYYXXyxyyxYY  --[replace v by CR(rot_5(v) e rot_3(u^+1) e^-1), e='']-->  YXXyxyyxYYxxxyx|xyxyxY  (class xyxyxY|xxxyxYXXyxyyxYY, total 21)
+closure time: 0.04 s with 2 thread(s) = 4.17 us/class (thread-seconds), 479672 classes/s
+RESULT: FAIL  (classes=18117, start in S, results outside S=4)
+=== 2c. negative: cap-22 dump checked at cap 23
+---- check P1_c22  (--cap 23 --start 'XyyxYYY|XXXYxxy' )
+cap L = 23
+start (exact, freely reduced): XyyxYYY | XXXYxxy   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 2738 of 2738 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 2738  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXY|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): IN S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 18010 move results with total <= 23 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 8260 results NOT in S (4022 distinct classes)
+  xxxyXXY|xyyXYYY  --[replace u by CR(rot_0(u) e rot_1(v^+1) e^-1), e='X']-->  xxxyXXYXyyXYYYxx|xyyXYYY  (class xxxyXXY|xxxyXXyxyyXYYYYY, total 23)
+  xxxyXXY|xyyXYYY  --[replace u by CR(rot_0(u) e rot_2(v^+1) e^-1), e='X']-->  xxxyXXYXyXYYYxyx|xyyXYYY  (class xxxyXXY|xxxyXyxyyXYYYYXY, total 23)
+  xxxyXXY|xyyXYYY  --[replace u by CR(rot_0(u) e rot_3(v^+1) e^-1), e='X']-->  xxxyXXYXXYYYxyyx|xyyXYYY  (class xxxyXXY|xxxyXXyyyyXYYxYY, total 23)
+  xxxyXXY|xyyXYYY  --[replace u by CR(rot_0(u) e rot_3(v^+1) e^-1), e='Y']-->  xxxyXXYYXYYYxyyy|xyyXYYY  (class xxxyXXY|xxxyxxyyXYYYXXXY, total 23)
+  xxxyXXY|xyyXYYY  --[replace u by CR(rot_0(u) e rot_4(v^+1) e^-1), e='Y']-->  xxxyXXYYYYYxyyXy|xyyXYYY  (class xxxyXXY|xxxxxyXXYXyyyXYY, total 23)
+closure time: 0.02 s with 2 thread(s) = 11.83 us/class (thread-seconds), 169037 classes/s
+RESULT: FAIL  (classes=2738, start in S, results outside S=8260)
+---- check P2_c22  (--cap 23 --start 'XyyxYYY|XXXYxxY' )
+cap L = 23
+start (exact, freely reduced): XyyxYYY | XXXYxxY   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 3186 of 3186 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 3186  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXy|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): IN S
+closure: 20772 move results with total <= 23 examined
+closure: 0 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 9484 results NOT in S (4663 distinct classes)
+  xxxyXXy|xyyXYYY  --[replace u by CR(rot_0(u) e rot_0(v^+1) e^-1), e='y']-->  xxxyXXyyxyyXYYYY|xyyXYYY  (class xxxyXXY|xxxxyXXYXXyyXYYY, total 23)
+  xxxyXXy|xyyXYYY  --[replace u by CR(rot_0(u) e rot_1(v^+1) e^-1), e='X']-->  xxxyXXyXyyXYYYxx|xyyXYYY  (class xxxyXXY|xxxyXXyXyyXYYYYY, total 23)
+  xxxyXXy|xyyXYYY  --[replace u by CR(rot_0(u) e rot_1(v^+1) e^-1), e='y']-->  xxxyXXyyyyXYYYxY|xyyXYYY  (class xxxyXXY|xxxxyyxYYYXYXXXy, total 23)
+  xxxyXXy|xyyXYYY  --[replace u by CR(rot_0(u) e rot_2(v^+1) e^-1), e='X']-->  xxxyXXyXyXYYYxyx|xyyXYYY  (class xxxyXXY|xxxyXyXyyXYYYYXY, total 23)
+  xxxyXXy|xyyXYYY  --[replace u by CR(rot_0(u) e rot_3(v^+1) e^-1), e='X']-->  xxxyXXyXXYYYxyyx|xyyXYYY  (class xxxyXXY|xxxyXXyyyyXYYXYY, total 23)
+closure time: 0.02 s with 2 thread(s) = 10.60 us/class (thread-seconds), 188711 classes/s
+RESULT: FAIL  (classes=3186, start in S, results outside S=9484)
+=== 3. reference dumps (read-only)
+---- check val_P1_c24
+cap L = 24
+start (exact, freely reduced): XyyxYYY | XXXYxxy   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 17718 of 17718 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 17718  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXY|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): IN S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 72960 move results with total <= 24 examined
+closure: 80 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 0.04 s with 2 thread(s) = 4.84 us/class (thread-seconds), 412975 classes/s
+RESULT: PASS  (classes=17718, start in S, results outside S=0)
+---- check val_P1_c24_k0
+cap L = 24
+start (exact, freely reduced): XyyxYYY | XXXYxxy   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 17600 of 17600 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 17600  (= number of keys, no duplicates)
+classes by total length (as read):
+start class xxxyXXY|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): IN S
+target XyyxYYY|XXXYxxY        (total 14): not in S
+closure: 72842 move results with total <= 24 examined
+closure: 80 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 118 results NOT in S (118 distinct classes)
+  xxxyXXY|xyxYYxyy  --[replace v by CR(rot_0(v) e rot_0(u^+1) e^-1), e='y']-->  xyxYYxyyyxxxyXXYY|xxxyXXY  (class xxxyXXY|xxxyXXYYxyxYYxyyy, total 24)
+  xxxyXXY|xyxYYxyy  --[replace v by CR(rot_0(v) e rot_1(u^+1) e^-1), e='y']-->  xyxYYxyyyxxyXXYxY|xxxyXXY  (class xxxyXXY|xxyXXYxYxyxYYxyyy, total 24)
+  xxxyXXY|xyxYYxyy  --[replace v by CR(rot_0(v) e rot_2(u^+1) e^-1), e='y']-->  xyxYYxyyyxyXXYxxY|xxxyXXY  (class xxxyXXY|xxyXXYxYYYxyyxYxy, total 24)
+  xxxyXXY|xyxYYxyy  --[replace v by CR(rot_0(v) e rot_3(u^+1) e^-1), e='y']-->  xyxYYxyyyyXXYxxxY|xxxyXXY  (class xxxyXXY|xxxyXXYYYYxyyxYxy, total 24)
+  xxxyXXY|xyxYYxyy  --[replace v by CR(rot_0(v) e rot_4(u^+1) e^-1), e='X']-->  xyxYYxyyXXXYxxxyx|xxxyXXY  (class xxxyXXY|xxxyxxyxYYxyyXXXY, total 24)
+closure time: 0.04 s with 2 thread(s) = 4.81 us/class (thread-seconds), 415401 classes/s
+RESULT: FAIL  (classes=17600, start in S, results outside S=118)
+=== 4. timing
+engine: RESULT start=XyyxYYY|XXXYxxY cap=25 conj=12 nosym=0 states=55033 levels=100 complete=1 hit=0 overflow=0 time=2s
+---- check P2_c25  (--cap 25 --start 'XyyxYYY|XXXYxxY' --threads 1)
+closure time: 0.27 s with 1 thread(s) = 4.99 us/class (thread-seconds), 200462 classes/s
+RESULT: PASS  (classes=55033, start in S, results outside S=0)
+---- check P2_c25  (--cap 25 --start 'XyyxYYY|XXXYxxY' --threads 2)
+closure time: 0.14 s with 2 thread(s) = 5.01 us/class (thread-seconds), 399533 classes/s
+RESULT: PASS  (classes=55033, start in S, results outside S=0)
+---- bench: 2M random classes of total L-1..L, L=24, 1 thread (timing only; all lookups miss)
+closure: 14709784 move results with total <= 24 examined
+closure time: 11.84 s with 1 thread(s) = 5.93 us/class (thread-seconds), 168728 classes/s
+---- bench: 2M random classes of total L-1..L, L=32, 1 thread (timing only; all lookups miss)
+closure: 15189736 move results with total <= 32 examined
+closure time: 19.11 s with 1 thread(s) = 9.55 us/class (thread-seconds), 104669 classes/s
+---- bench: 10M random classes, L=32, 2 threads
+distinct classes after OUR canonicalisation: 9999987  (DUPLICATES: some keys denote the same class)
+canonicalisation + sort: 14.6 s
+closure: 75975401 move results with total <= 32 examined
+closure time: 42.71 s with 2 thread(s) = 8.54 us/class (thread-seconds), 234142 classes/s

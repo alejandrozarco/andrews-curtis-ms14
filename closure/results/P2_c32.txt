@@ -1,0 +1,43 @@
+cap L = 32
+start (exact, freely reduced): XyyxYYY | XXXYxxY   total 14
+start abelianisation determinant = -1 (+-1: no empty relator is ever reachable)
+keys read: 71499215  (0.7 s)
+decoded: 0 bad (not cyclically reduced / total > cap / malformed)
+note: 71499215 of 71499215 input keys are already in our canonical form (informational)
+distinct classes after OUR canonicalisation: 71499215  (= number of keys, no duplicates)
+classes by total length (as read):
+  total 14: 2
+  total 15: 14
+  total 16: 26
+  total 17: 180
+  total 18: 225
+  total 19: 1080
+  total 20: 1218
+  total 21: 5504
+  total 22: 6278
+  total 23: 29779
+  total 24: 33654
+  total 25: 160398
+  total 26: 183844
+  total 27: 881606
+  total 28: 1028569
+  total 29: 4928773
+  total 30: 5746312
+  total 31: 27294618
+  total 32: 31197135
+canonicalisation + sort: 47.9 s
+start class xxxyXXy|xyyXYYY : IN S
+target x|y                    (total  2): not in S
+target xxxYYYY|xyxYXY         (total 13): not in S
+target XyyxYYY|XXXYxxy        (total 14): not in S
+target XyyxYYY|XXXYxxY        (total 14): IN S
+target xxyXy|xyyyyyxYY        (total 14): not in S
+target xxxxyXy|xyyyxYY        (total 14): not in S
+target xxyxxYY|xyXYYXy        (total 14): not in S
+closure: 461215820 move results with total <= 32 examined
+closure: 601880 of them are case-E2 with a < b and 2b - a > L (no one-step in-cap realisation)
+closure: 0 results NOT in S (0 distinct classes)
+closure time: 595.57 s with 1 thread(s) = 8.33 us/class (thread-seconds), 120052 classes/s
+RESULT: PASS  (classes=71499215, start in S, results outside S=0)
+acde7436a4f7532fa987b98a51ab51b0c1a2805cdfd0efa75faca46dab1c8322  closure_check.cpp
+8e42d8dbc30c1b516cd505d90424ec5ceaf2af82d785c99b2a1f891c2ffc5ac4  dump_P2_c32.keys
