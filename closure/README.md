@@ -194,7 +194,7 @@ Reference dumps (read-only):
 
 The trivial class was outside S in every positive run. At these caps P1, P2 and AK(3) are pairwise in different capped components.
 
-## 5a. The published components (caps 30 and 32)
+## 5a. The published components (caps 30 to 32)
 
 `run_large.sh` dumps the components of result 2 and 3 of the top-level `README.md` with `acsearch` (same cap and conjugator bound as the published runs) and checks each dump against seven classes: the trivial presentation, AK(3), P1, P2, C3, C4 and C6. Outputs are in `results/` (`dump_*.log` from the engine, `*.txt` from the checker).
 
@@ -202,12 +202,13 @@ The trivial class was outside S in every positive run. At these caps P1, P2 and 
 |---|---|---|---|---|---|---|---|
 | C4 | 32 | 3,657,734 | 3,657,734 | 22,443,046 | 29,034 | 0 | PASS |
 | C3 | 30 | 58,196,612 | 58,196,612 | 520,999,540 | 125,632 | 0 | PASS |
+| C3 | 31 | 199,184,986 | 199,184,986 | 1,817,634,989 | 342,112 | 0 | PASS |
 | P1 | 32 | 32,699,098 | 32,699,098 | 197,618,123 | 160,613 | 0 | PASS |
 | P2 | 32 | 71,499,215 | 71,499,215 | 461,215,820 | 601,880 | 0 | PASS |
 
-Membership of the seven classes: each set contains its own start; the P1 set also contains C6 (result 1 of the top-level `README.md`); no set contains the trivial presentation, AK(3), or another of P1, P2, C3, C4. By the corollary of section 3, no AC path in SAIR's moves from P1, P2 or C4 (C3) to any of the classes outside its set keeps every total relator length <= 32 (<= 30).
+Membership of the seven classes: each set contains its own start; the P1 set also contains C6 (result 1 of the top-level `README.md`); no set contains the trivial presentation, AK(3), or another of P1, P2, C3, C4. By the corollary of section 3, no AC path in SAIR's moves from P1, P2 or C4 (C3) to any of the classes outside its set keeps every total relator length <= 32 (<= 31).
 
-A cap-L component contains every smaller-cap component, so a PASS at the largest cap of a start covers the smaller caps too. Not checked here: the C3 component at cap 31 (199,184,986 classes). `acsearch_lean`, which ran it, does not write dumps (its usage line lists `--dump`, but the option is not implemented), and `acsearch` with `--dump` would need roughly 6-7 GB at that size, which was not available on the shared machine used; the checker itself would need about 3.2 GB. So the C3 bound from cap 31 rests on the engine alone; the closure-checked C3 bound is the one from cap 30. Each results file ends with the sha256 of `closure_check.cpp` and of the dump it checked.
+A cap-L component contains every smaller-cap component, so a PASS at the largest cap of a start covers the smaller caps too; the C3 check at cap 30 is kept as the run with the unmodified engine. The C3 component at cap 31 (199,184,986 classes, added 2026-11-13) was first enumerated with `acsearch_lean`, which does not write dumps (its usage line lists `--dump`, but the option is not implemented). `acsearch --dump` sorts a copy of the keys, which at this size needs about 9 GB at its peak, so `run_large.sh` builds a copy of `acsearch.cpp` with that one line changed: it frees the hash table and sorts the keys in place (about 6 GB at its peak). On the cap-14 test start of section 5 the two programs write byte-identical dumps, and at cap 31 the count and the distribution by total length equal those of the `acsearch_lean` run. The PASS does not depend on which program wrote the dump. Each results file ends with the sha256 of `closure_check.cpp` and of the dump it checked.
 
 ## 6. Timing and memory
 
@@ -230,7 +231,7 @@ Real classes produce about 4 to 4.4 in-cap results each.
 | 2M classes, L = 32 | 8.1 µs |
 | 10M classes, L = 32, 2 threads | 7.7-9.2 µs thread-seconds (220-260k classes/s wall), RSS 322 MB |
 
-At L = 24 random classes cost about 1.5 times as much as real ones. On the published components (section 5a, one thread, on a machine shared with other jobs) the closure took 7.8-8.3 µs per class: 28 s for C4 cap 32, 262 s for P1 cap 32, 596 s for P2 cap 32 and 476 s for C3 cap 30, plus 3-48 s of decoding, canonicalisation and sorting (an earlier run on a less loaded machine took 3.7-7.0 µs per class). Memory is about 16 bytes per class (1.1 GB for 70M) plus small buffers. Up to 20M missing keys per thread are stored if the check fails.
+At L = 24 random classes cost about 1.5 times as much as real ones. On the published components (section 5a, one thread, on a machine shared with other jobs) the closure took 7.8-8.3 µs per class: 28 s for C4 cap 32, 262 s for P1 cap 32, 596 s for P2 cap 32, 476 s for C3 cap 30 and 1564 s for C3 cap 31, plus 3-81 s of decoding, canonicalisation and sorting (an earlier run on a less loaded machine took 3.7-7.0 µs per class). Memory is about 16 bytes per class (1.1 GB for 70M, 3.2 GB for 199M) plus small buffers. Up to 20M missing keys per thread are stored if the check fails.
 
 ## 7. Limitations and remarks
 

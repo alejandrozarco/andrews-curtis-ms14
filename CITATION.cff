@@ -13,7 +13,7 @@ abstract: >-
   P2 = MS(2, x^-2 y^-1 x^2 y^-1) up to total relator length 32 (C3 to 31, C4 to 32) contain neither AK(3), the trivial
   presentation, nor each other, so under the stated search model any AC path between them reaches total length at
   least 33. The enumeration program is tested, including an independent cross-check at smaller caps and an independent
-  closure check of the largest components (except C3 at cap 31), but not verified. AI-produced, not peer reviewed.
+  closure check of the largest components, but not verified. AI-produced, not peer reviewed.
 keywords:
   - Andrews–Curtis conjecture
   - balanced presentations

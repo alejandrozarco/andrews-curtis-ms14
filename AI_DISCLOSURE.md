@@ -39,7 +39,7 @@ Later reviews found:
 
 The reviews also recorded gaps that remain open:
 - the claim that junction-free conjugators of bounded length suffice (see `acsearch.cpp`) is argued and tested, not
-  proved (the closure check in `closure/` does not depend on it, but does not cover C3 at cap 31);
+  proved (the closure check in `closure/` does not depend on it);
 - `acsearch_lean.cpp` shares its move generation and canonicalisation with `acsearch.cpp`, so the two engines are not
   independent checks of each other.
 
@@ -53,7 +53,7 @@ human-readable proof (see the note at the top of `README.md`).
   caps, in the quotient graph with all conjugators, and as the full exact-word component under the SAIR moves, and
   compares them with `acsearch`'s output.
 - `closure/closure_check.cpp` (C++, written independently of `acsearch.cpp`) checks that the dumped components of
-  results 2 and 3 at their largest caps (P1, P2, C4 at 32; C3 at 30) contain the start and are closed under every
+  results 2 and 3 at their largest caps (P1, P2, C4 at 32; C3 at 31) contain the start and are closed under every
   in-cap move, which by the proof in `closure/README.md` implies that they contain the whole exact capped component;
   all four pass with the published counts.
 - `sair_check/` replays the same certificates with `verifier.core.apply_move` of the SAIR ACC repository
@@ -62,9 +62,9 @@ human-readable proof (see the note at the top of `README.md`).
 What remains to be trusted:
 - the enumeration code (`acsearch.cpp`, `acsearch_lean.cpp`): move generation, canonicalisation and the hash table.
   It is tested (it reproduces published component sizes at cap 28, `validate_projection.py` with a negative control,
-  the independent cross-check at caps up to 24), not formally verified. For P1, P2 and C4 at cap 32 and C3 at cap 30
+  the independent cross-check at caps up to 24), not formally verified. For P1, P2 and C4 at cap 32 and C3 at cap 31
   the engine contributes only the candidate set, and what remains to be trusted is `closure_check.cpp`, its proof
-  and the compiler; the C3 result at cap 31 rests on the engine alone;
+  and the compiler;
 - the projection argument from exact-word AC moves to the cyclic quotient graph (`README.md`, Search model);
 - `verify.py` itself (the AC paths from AK(3) to its letter-permuted images in `certs/phi/`, used for the quotient by
   letter permutations, are checked by it).

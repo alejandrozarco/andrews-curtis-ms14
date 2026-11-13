@@ -66,10 +66,10 @@ the $`K = 8`$ logs are kept as `runs/exh_P1_c32.log`, `runs/exh_P2_c32.log`.
 | C4 | 269,500 | 627,909 | 1,544,676 | 3,657,734 |
 
 ($`K = 8`$, and $`K = 9`$ at cap 32; `runs/exh_C3_*.log`, `runs/exh_C4_*.log`. C3 at cap 31 was run with `acsearch_lean`,
-added 2026-11-10; at cap 32 the C3 run exceeded its budget of 250M states, `runs/exh_C3_c32_k9.log`.) So, under the
-search model, any AC path from C3 to AK(3), P1, P2, C4, C6 or the trivial presentation reaches total length
-$`\ge 32`$ (from the cap-31 run, which rests on the engine alone; the closure check below covers C3 at cap 30, giving
-$`\ge 31`$), and from C4 to AK(3), P1, P2, C3, C6 or the trivial presentation, $`\ge 33`$.
+added 2026-11-10, and repeated with `acsearch` for the closure check below, with the same count and the same
+distribution by total length; at cap 32 the C3 run exceeded its budget of 250M states, `runs/exh_C3_c32_k9.log`.)
+So, under the search model, any AC path from C3 to AK(3), P1, P2, C4, C6 or the trivial presentation reaches total length
+$`\ge 32`$, and from C4 to AK(3), P1, P2, C3, C6 or the trivial presentation, $`\ge 33`$.
 
 ## Figures
 
@@ -92,7 +92,7 @@ Total relator length along the certificate of result 1, as exact words and cycli
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="figures/hard_cases_dark.svg">
-  <img alt="Map of the length-14 cases P1, C6, P2, C3, C4, AK(3) and the trivial presentation: P1 and C6 joined by the certificate, and the largest cap at which each start's component was enumerated completely (32 for P1, P2, C4; 31 for C3, closure-checked at 30)" src="figures/hard_cases_light.svg">
+  <img alt="Map of the length-14 cases P1, C6, P2, C3, C4, AK(3) and the trivial presentation: P1 and C6 joined by the certificate, and the largest cap at which each start's component was enumerated completely (32 for P1, P2, C4; 31 for C3)" src="figures/hard_cases_light.svg">
 </picture>
 
 Certified link (result 1) and completely enumerated capped components (results 2, 3). An AC path from a case to any
@@ -154,16 +154,18 @@ cap; the proof does not use the junction-free conjugator claim or the bound on $
 | P1 | 32 | 32,699,098 | 197,618,123 | 0 | PASS |
 | P2 | 32 | 71,499,215 | 461,215,820 | 0 | PASS |
 | C3 | 30 | 58,196,612 | 520,999,540 | 0 | PASS |
+| C3 | 31 | 199,184,986 | 1,817,634,989 | 0 | PASS |
 | C4 | 32 | 3,657,734 | 22,443,046 | 0 | PASS |
 
 The trivial presentation, AK(3), P1, P2, C3, C4 and C6 were checked for membership: each set contains its start, the P1
 set also contains C6, and no set contains any of the others. Tests at small caps are in `closure/README.md` and
 `closure/test_log.txt`: equality with the exact SAIR component by breadth-first search at caps 14–22, including a short
 start where conjugators up to length 5 occur, and negative controls that must and do fail (dumps with the conjugator
-bound cut short, with one class removed, or checked at a higher cap). Not checked: the C3 component at cap 31
-(`acsearch_lean`, which ran it, does not write dumps, and a dump with `acsearch` would need roughly 6–7 GB). The dumps
-themselves (0.06–1.1 GB each) are not stored; `closure/run_large.sh` regenerates and checks them (about 2 hours on one
-thread), and each file in `closure/results/` ends with the sha256 of the checker source and of the dump.
+bound cut short, with one class removed, or checked at a higher cap). The C3 cap-31 check (added 2026-11-13) used a
+dump from `acsearch` with one line changed to sort the keys in place, which lowers peak memory to about 6 GB; the
+result does not depend on which program wrote the dump. The dumps themselves (0.06–3.2 GB each) are not stored;
+`closure/run_large.sh` regenerates and checks them (about 6 hours on one thread), and each file in `closure/results/`
+ends with the sha256 of the checker source and of the dump.
 
 ## Independent replay with the SAIR ACC reference implementation
 
@@ -183,7 +185,7 @@ git clone https://github.com/SAIRcompetition/Andrews-Curtis sair-ac
 SAIR_REPO=sair-ac python3 sair_check/check_all.py
 SAIR_REPO=sair-ac crosscheck/run_crosscheck.sh ./acsearch xc-run   # ~30 min; xc-run/results.txt, DONE or FAIL
 ACSEARCH=./acsearch closure/run_tests.sh > closure-tests.txt 2>&1   # small-cap tests of closure_check
-ACSEARCH=./acsearch closure/run_large.sh                          # ~2 h; rewrites closure/results/
+ACSEARCH=./acsearch closure/run_large.sh                          # ~6 h; rewrites closure/results/
 ```
 
 Python 3.9+, no third-party packages for `verify.py`. The cap-32 enumerations need ~2 GB and 20–30 min per start
